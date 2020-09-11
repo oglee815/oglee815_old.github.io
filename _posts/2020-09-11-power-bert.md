@@ -1,3 +1,8 @@
+---
+layout: post
+title: PowerBERT
+---
+
 ## 어떤 내용의 논문인가요? 👋
 
 상대적으로 덜 중요한 Word vector를 제거함으로써, GLUE Task 에서 BERT 대비 Acc의 손실은 1% 이하로 유지하면서 속도는 최대 4.5배 향상함.
