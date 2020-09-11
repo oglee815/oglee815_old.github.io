@@ -1,66 +1,81 @@
-# Jekyll configuration
-#markdown: redcarpet
-#highlighter: pygments
+# General Settings
+name: Steve Austin
+job_title: UI/UX Engineer
+email: youremail@gmail.com
+description: I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.
+avatar: https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg
+favicon: /favicon.ico
+twitter_handler: your_handler
+analytics_code: UA-XXXXXXX-2
+disqus: your_disqus_site
+
+# Social Accounts
+social_networks:
+-  { name: facebook, url: 'http://facebook.com' }
+-  { name: twitter, url: 'http://twitter.com' }
+-  { name: instagram, url: '' }
+-  { name: google-plus, url: '' }
+-  { name: linkedin, url: '' }
+-  { name: skype, url: '' }
+-  { name: github, url: '' }
+-  { name: codepen, url: '' }
+-  { name: stack-overflow, url: '' }
+-  { name: dribbble, url: '' }
+-  { name: behance, url: '' }
+-  { name: pinterest, url: '' }
+-  { name: tumblr, url: '' }
+-  { name: youtube, url: '' }
+-  { name: vimeo, url: '' }
+-  { name: vine, url: '' }
+-  { name: 500px, url: '' }
+-  { name: flickr, url: '' }
+-  { name: spotify, url: '' }
+-  { name: steam, url: '' }
+-  { name: wordpress, url: '' }
+-  { name: xing, url: '' }
+-  { name: bitcoin, url: '' }
+-  { name: pocket, url: '' }
+-  { name: applemusic, url: '' }
+
+# Modules Settings
+show_categories: 1
+show_tags: 1
+show_email: 1
+show_rss: 1
+show_comments: 1
+show_menu: 1
+fixed_sidebar: 1
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: "true"
+
+# Serving
+url: ""
+baseurl: ""
+
+# Includes
+include: ["_pages"]
+
+# Outputting
+permalink: /:categories/:title.html
+category_dir: categories
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Conversion
 markdown: kramdown
-highlighter: rouge
-paginate: 5
-language: 'en-uk'
+excerpt_separator: <!--more-->
 
-# Website info
-name: 'Finding The Way Home'
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+# Assets Settings
+sass:
+  sass_dir: assets/partials
+  style: compressed
 
-short_url: 'jekyller.github.io/jasper/'
-google_analytics: UA-69281367-1
-disqus: username
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /jasper/
-
-# Permalinks
-permalink: /:title
-# permalink: /author/:username
-# permalink: /tag/:tag
-
-# gems and other configs
-plugins: [jekyll-paginate]
-
-# Additional settings available on the front-matter
-# Site logo in the index.html (as in demo.ghost.io)
-# Author's page cover in _layouts/author.html
-# The same for page.html and tag.html layouts
-# Post's page cover as a per-post basis _posts/...
-# Disqus comments as a per-post basis
-# ...
-
-
-# Settings for builing master branch with travis-ci
-# with jekyll-travis
-
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-safe: false
-lsi: false
-username: jekyller
-repo: jasper
-branch: master
-relative_source: ../jasper/
-destination: ../jasper-pages/
-production_url:  https://jekyller.github.io/jasper/
-source_url:  https://github.com/jekyller/jasper/
-
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
-  - node_modules
-  - .git
