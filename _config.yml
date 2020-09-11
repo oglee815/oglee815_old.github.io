@@ -56,14 +56,14 @@ defaults:
       comments: "true"
 
 # Serving
-url: ""
+url: "https://oglee815.github.io"
 baseurl: ""
 
 # Includes
 include: ["_pages"]
 
 # Outputting
-permalink: /:categories/:title.html
+permalink: /:categories/:title.html/:year/:month/:day
 category_dir: categories
 
 # Pagination
