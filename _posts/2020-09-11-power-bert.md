@@ -1,6 +1,14 @@
 ---
 layout: post
+date: 2020-09-11 11:42
 title: PowerBERT
+description: Accelerating BERT Inference via Progressive Word-vector Elimination
+comments: false
+category: 
+- NLP
+tags:
+- NLP
+- Distilation
 ---
 
 ## 어떤 내용의 논문인가요? 👋
