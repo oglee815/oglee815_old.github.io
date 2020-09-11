@@ -15,6 +15,8 @@ tags:
 
 상대적으로 덜 중요한 Word vector를 제거함으로써, GLUE Task 에서 BERT 대비 Acc의 손실은 1% 이하로 유지하면서 속도는 최대 4.5배 향상함.
 
+<!--more-->
+
 ## Abstract (요약) 🕵🏻‍♂️
 
 > We develop a novel method, called PoWER-BERT, for improving the inference time of the popular BERT model, while maintaining the accuracy. It works by: <strong>a) exploiting redundancy pertaining to word-vectors (intermediate encoder outputs) and eliminating the redundant vectors. b) determining which word-vectors to eliminate by developing a strategy for measuring their signiﬁcance, based on the self-attention mechanism. c) learning how many word-vectors to eliminate by augmenting the BERT model and the loss function.</strong> Experiments on the standard GLUE benchmark shows that PoWER-BERT achieves up to 4.5x reductionin inference time over BERT with < 1% loss in accuracy. <strong>We show that PoWER-BERT offers signiﬁcantly better trade-off between accuracy and inference time compared to prior methods</strong>. We demonstrate that our method attains up to 6.8x reduction in inference time with < 1% loss in accuracy when applied over ALBERT, a highly compressed version of BERT. The code for PoWER-BERT is publicly available at https://github.com/IBM/PoWER-BERT.
