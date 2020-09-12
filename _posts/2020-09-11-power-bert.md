@@ -9,6 +9,7 @@ category:
 tags:
 - NLP
 - Distilation
+- Test
 ---
 
 ## 어떤 내용의 논문인가요? 👋
