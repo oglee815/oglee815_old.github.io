@@ -1,43 +1,45 @@
-<aside class="user-profile {% if site.fixed_sidebar == 1 %}fixed{% endif %}" role="complementary">
-    <div class="burger">
-        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
-        <label for="toggleBurger">
-            <span>Navigation</span>
-        </label>
-    </div>
+{% if site.avatar -%}
+  <div class="sidebar-section">
+    {%- if site.avatar contains "://" -%}
+      {%- assign avatar = site.avatar -%}
+    {%- else -%}
+      {%- assign avatar = site.avatar | relative_url -%}
+    {%- endif -%}
+    <img src="{{ avatar }}" class="author-avatar u-photo align-center" alt="{{ site.author }}">
+  </div>
+{%- endif %}
 
-    <div class="compact-header">
-        <a class="avatar" href="{{ site.baseurl | prepend: site.url }}"><img alt="Avatar" src="{% if site.avatar %}{{site.avatar}}{% else %}{{ site.email | to_gravatar:140 }}{% endif %}" /></a>
-        <div class="my-info">
-            <strong class="my-name">{{ site.name }}</strong>
-            <span class="my-job-title">{{ site.job_title }}</span>
-        </div>
-    </div>
+<div class="sidebar-section">
+  <ul class="contact-list">
+    {% if site.author -%}
+      <li>
+        <i class="sidebar-icon fas fa-at"></i>
+        <span class="contact-info p-name">{{ site.author | escape }}</span>
+      </li>
+    {%- endif %}
+    {% if site.email -%}
+      <li>
+        <i class="sidebar-icon fas fa-envelope"></i>
+        <a class="contact-info u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </li>
+    {%- endif %}
+  </ul>
+</div>
 
-    {% if site.show_menu == 1 %}
-        {% if site.pages %}
-        <div class="mainmenu">
-            <a href="{{ site.baseurl | prepend: site.url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
-            {% for p in site.pages %}
-                {% if p.layout == 'page' %}
-                    <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a>
-                {% endif %}
-            {% endfor %}
-        </div>
-        {% endif %}
-    {% endif %}
+<div class="sidebar-section feed-subscribe">
+  <a href="{{ 'feed.xml' | relative_url }}">
+    <i class="sidebar-icon fas fa-rss"></i><span>Subscribe</span>
+  </a>
+</div>
 
-    <p class="about-me">{{ site.description }}</p>
-
-    <ul class="socials">
-        {% for social in site.social_networks %}{% if social.url != '' %}<li><a href="{{social.url}}"><svg title="{{social.name}}" width="16" height="16" {% if social.name == 'applemusic' %} style="margin: 0 0 0 -2px" {% endif %}><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#{{social.name}}-icon"></use></svg></a></li>{% endif %}{% endfor %}
-
-        {% if site.email != blank and site.show_email == 1 %}
-            <li><a href="mailto:{{site.email}}"><svg title="{{social.name}}" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#email-icon"></use></svg></a></li>
-        {% endif %}
-
-        {% if site.show_rss == 1 %}
-         <li><a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"><svg title="{{social.name}}" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
-        {% endif %}
+{% if site.data.social -%}
+  <div class="sidebar-section">
+    <ul class="social-icons">
+      {% for social in site.data.social -%}
+        <li>
+          <a class="social-icon" href="{{ social.url }}"><i class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
+        </li>
+      {%- endfor %}
     </ul>
-</aside>
+  </div>
+{%- endif %}
