@@ -34,6 +34,9 @@
     } else {
       filename = "{{ '/assets/css/skin-midnight.css' | relative_url }}";
     }
+    
+    filename = "{{ '/assets/css/skin-daylight.css' | relative_url }}";
+    
     const elem = document.createElement("link");
     elem.setAttribute("rel", "stylesheet");
     elem.setAttribute("type", "text/css");
