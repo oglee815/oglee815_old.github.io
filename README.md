@@ -158,11 +158,11 @@ The navigation bar also supports dropdown submenus:
 You can create a file `_data/social.yml` to configure links to your social media. For example,
 
 ```yml
-- title: Twitter
-  url: https://twitter.com/ngzhio
-  icon: fab fa-twitter
+- title: Facebook
+  url: https://www.facebook.com/hyunjae.lee.129794
+  icon: fab fa-facebook
 - title: GitHub
-  url: https://github.com/ngzhio/jekyll-theme-hamilton
+  url: https://github.com/oglee815
   icon: fab fa-github
 ```
 
