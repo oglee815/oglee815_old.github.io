@@ -3,6 +3,7 @@ description: My test page
 author: 이현제
 avatar: /logo.png
 email: oglee815@gmail.com
+moto : 배우고 기록하고
 
 remote_theme: ngzhio/jekyll-theme-hamilton
 
@@ -13,8 +14,8 @@ plugins:
   - jekyll-paginate
   - jekyll-remote-theme
 
-site :
-  skin : daylight
+# site :
+#   skin : daylight
 
 paginate: 10
 
@@ -35,9 +36,9 @@ exclude:
 
 # Jekyll SEO Tag (Optional)
 # =========================
-twitter:
-  username: ngzhio
-  card: summary
+# twitter:
+#   username: ngzhio
+#   card: summary
 logo: logo.png
 social:
   name: Hyunjae Lee
@@ -46,3 +47,5 @@ social:
     - https://github.com/oglee815
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
 lang: en
+
+excerpt_separator: <!--more-->

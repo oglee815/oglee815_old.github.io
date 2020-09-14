@@ -264,7 +264,7 @@ ul.social-icons {
 .author-avatar {
   width: $base-font-size * 8;
   height: auto;
-  border-radius: 50%;
+//  border-radius: 50%;
 }
 
 /**
@@ -376,6 +376,13 @@ ul.social-icons {
   margin-bottom: $spacing-unit / 2;
 }
 
+.post-meta-home {
+  @include relative-font-size(0.8);
+  margin-bottom: 0.5em;
+  margin-top : 5px;
+  display : inline-block;
+}
+
 .post-footer {
   padding-top: $spacing-unit / 2;
   border-top: 1px solid;
@@ -387,6 +394,19 @@ ul.post-taxonomies {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 0 $spacing-unit / 3;
+
+  li {
+    float: left;
+    margin-right: $spacing-unit / 6;
+    padding: 0.3em 0.5em 0.2em 0.5em;
+  }
+}
+
+ul.post-taxonomies-home {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 0;
 
   li {
     float: left;
@@ -593,3 +613,23 @@ figcaption.align-center {
     }
   }
 }
+
+.categori-home {
+  display: inline-block;
+  height: 10px;
+  @include relative-font-size(0.8);
+  ul {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    
+    li {
+      padding-top : 0;
+      list-style: none;
+      border-bottom: none !important;
+    }
+  }
+}
+
+// .li-home-category {
+
+// }
