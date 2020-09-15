@@ -633,3 +633,30 @@ figcaption.align-center {
 // .li-home-category {
 
 // }
+
+.search { position: relative; margin: 0 0 20px; border: 1px solid lightgrey; background: white; box-shadow: 0 2px 3px rgba(black,.05), inset 6px 0 0 lightgrey; @include placeholder(grey, italic);
+  & > div { @include flexbox(); overflow: hidden;
+    .show-results-count { text-align : center; padding-left:5px; min-width: 100px; margin-left: -100px; padding: 0 0px; min-height: 55px; line-height: 55px; color: grey; background: white; letter-spacing: 0.05em; font-size: 11px; text-transform: uppercase; box-shadow: 6px 0 0 0 lightgrey; @include transition(all .2s ease);
+      &.active { margin-left: 0; }
+    }
+    //.search-holder { width: 100%; margin: 0 0 0 34px; background: url(../svg/search-icon.svg) no-repeat left center; @include bgsizeNum(15px, 16px); padding: 0 0 0 25px;
+    .search-holder { width: 100%; margin: 0 0 0 0px; @include bgsizeNum(15px, 16px); padding: 0 0 0 10px;
+      input { width: 100%; min-height: 55px; line-height: 22px; background: none; border: none; }
+    }
+  }
+  //.results-container { position: absolute; left: -1px; width: calc(100% + 2px); padding: 1px; box-shadow: inset 0 0 0 1px lightgrey, 0 7px 10px rgba(black,.05); z-index: 1000;
+  .results-container { position: absolute; left: -1px; width: calc(100% + 2px); padding: 1px; z-index: 1000;  
+    margin-left : 0px !important;
+    list-style : none;
+    li { font-size: 15px; list-style-position: inside; border: 0.1px solid lightgray;
+      a { position: relative; display: block; padding: 15px 15px 15px 35px; background: whitesmoke; box-shadow: 0 -1px 0 lightgrey; @include transition(background .1s ease);
+        &:before { position: absolute; top: 50%; left: 15px; background: grey; content: ""; width: 5px; height: 5px; border-radius: 50%; @include translate(0, -50%); }
+        &:hover { background: white; }
+      }
+    }
+  }
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}

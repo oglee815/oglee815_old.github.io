@@ -3,7 +3,9 @@ layout: default
 ---
 
 <div class="home">
-
+  {% include search.html %}
+  {% include scripts.html %}
+  
   {{ content }}
 
   {% if site.paginate %}

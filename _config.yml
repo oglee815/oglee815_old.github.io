@@ -1,11 +1,11 @@
 title: Oglee
-description: My test page
+description: 마음은 한가하게, 몸은 부지런하게
 author: 이현제
 avatar: /logo.png
 email: oglee815@gmail.com
 moto : 배우고 기록하고
 
-remote_theme: ngzhio/jekyll-theme-hamilton
+#remote_theme: ngzhio/jekyll-theme-hamilton
 
 plugins:
   - jekyll-seo-tag
