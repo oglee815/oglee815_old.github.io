@@ -198,7 +198,7 @@
  */
 .site-sidebar {
   padding: $spacing-unit;
-  border-right: 1px solid;
+  //border-right: 1px solid;
   @include relative-font-size(0.8);
 
   @include media-query($on-medium) {
@@ -297,6 +297,15 @@ ul.social-icons {
   display: none;
 }
 
+.site-main {
+  article{
+    margin-top: 30px;
+    padding: 40px 40px 80px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+  }
+}
+
 /**
  * Homepage
  */
@@ -310,10 +319,18 @@ ul.social-icons {
   list-style: none;
 
   li {
-    padding-top: $spacing-unit / 2;
-    padding-bottom: $spacing-unit / 2;
-    border-bottom: 1px solid;
-    margin-bottom: $spacing-unit;
+
+    // position: relative;
+    margin: 40px 0 0;
+    padding: 40px 40px 40px;
+    border: 1px solid #eee;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+
+    // padding-top: $spacing-unit / 2;
+    // padding-bottom: $spacing-unit / 2;
+    // border-bottom: 1px solid;
+    // margin-bottom: $spacing-unit;
 
     h2 {
       margin-bottom: 0;
@@ -366,7 +383,7 @@ ul.social-icons {
 .post-header {
   padding-top: $spacing-unit * 2;
   padding-bottom: $spacing-unit;
-  border-bottom: 1px solid;
+  //@extend: 1px solid;
   margin-bottom: $spacing-unit * 2;
   text-align: center;
 }
@@ -381,6 +398,15 @@ ul.social-icons {
   margin-bottom: 0.5em;
   margin-top : 5px;
   display : inline-block;
+  .post-tag-home {
+    border-radius: 0.5em !important;
+    background-color: whitesmoke !important;
+    display : inline-block;
+    float: left;
+    margin-right: 0.3333333333rem;
+    padding: 0.3em 0.5em 0.2em 0.5em;
+  }
+  
 }
 
 .post-footer {
@@ -418,12 +444,14 @@ ul.post-taxonomies-home {
 ul.post-tags {
   li {
     border-radius: 0.5em;
+
   }
 }
 
+
 ul.post-categories {
   li {
-    text-decoration: underline;
+   // text-decoration: underline;
   }
 }
 
@@ -629,7 +657,8 @@ figcaption.align-center {
     }
   }
 }
-
+.categori-list{ display:inline-block;
+}
 // .li-home-category {
 
 // }

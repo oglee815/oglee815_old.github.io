@@ -5,9 +5,13 @@ $code-background-color: #f8f8f8 !default;
 
 //$border-color:          #828282 !default;
 //$border-color:          #1abc9c !default;
-$border-color:          #333333 !default;
-$border-color-light:    lighten($border-color, 40%) !default;
-$border-color-dark:     darken($border-color, 25%) !default;
+// $border-color:          #333333 !default;008080
+$border-color:          #008080 !default;
+//$border-color-light:    lighten($border-color, 40%) !default;
+//$border-color-dark:     darken($border-color, 25%) !default;
+$border-color-light:    #999 !default;
+$border-color-dark:     #999 !default;
+
 //$border-color-light:    lighten($border-color, 40%) !default;
 //$border-color-dark:     darken($border-color, 25%) !default;
 

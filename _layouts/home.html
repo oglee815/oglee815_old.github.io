@@ -25,7 +25,8 @@ layout: default
           </time>
           {% if post.categories.size > 0 %}
           <span> / </span>
-          <ul>
+          
+          <!-- <ul>
               {% assign categories = post.categories | sort %}
               {% for category in categories %}
                 <li>
@@ -33,7 +34,17 @@ layout: default
                   <a href="{{ '/categories/#:category' | replace: ':category', slugified_category | relative_url }}">{{ category }}</a>
                 </li>
               {% endfor %}
-          </ul>
+          </ul> -->
+          <div class='categori-list'>
+            {% assign categories = post.categories | sort %}
+            {% for category in categories %}
+              <span>
+                {% assign slugified_category = category | slugify %}
+                <a href="{{ '/categories/#:category' | replace: ':category', slugified_category | relative_url }}">{{ category }}</a>
+              </span>
+            {% endfor %}
+          </div>
+
           {% endif %}
         </div>
 
@@ -46,15 +57,13 @@ layout: default
           {% if post.tags.size > 0 %}
             <div>
               <!-- <i class="fas fa-tags"></i> -->
-              <ul class="post-taxonomies-home post-tags">
-                {% assign tags = post.tags | sort %}
-                {% for tag in tags %}
-                  <li class="post-tag">
-                    {% assign slugified_tag = tag | slugify %}
-                    <a href="{{ '/tags/#:tag' | replace: ':tag', slugified_tag | relative_url }}">{{ slugified_tag }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
+              {% assign tags = post.tags | sort %}
+              {% for tag in tags %}
+                <div class="post-tag-home">
+                  {% assign slugified_tag = tag | slugify %}
+                  <a href="{{ '/tags/#:tag' | replace: ':tag', slugified_tag | relative_url }}">{{ slugified_tag }}</a>
+                </div>
+              {% endfor %}
             </div>
           {% endif %}
           

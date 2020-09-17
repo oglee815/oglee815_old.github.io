@@ -64,7 +64,8 @@ table {
 
 .site-header {
   background-color: $background-color;
-  border-top-color: $border-color-dark;
+  //border-top-color: $border-color-dark;#008080
+  border-top-color: #008080;
   border-bottom-color: $border-color-light;
 }
 
@@ -102,7 +103,7 @@ table {
 
 .post-list {
   li {
-    border-bottom-color: $border-color-light;
+    // border-bottom-color: $border-color-light;
   }
 }
 
@@ -165,3 +166,5 @@ ul.post-tags {
     color: $subscribe-color;
   }
 }
+
+a:hover{color:#009999}
