@@ -203,3 +203,14 @@ ul.task-list {
     padding-left: $spacing-unit;
   }
 }
+
+blockquote{
+  background-color : ghostwhite;
+}
+
+.centered{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
