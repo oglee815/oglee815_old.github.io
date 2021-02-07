@@ -228,3 +228,13 @@ blockquote{
     max-width: 80%;
   }
 }
+
+.centered_small{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  img{
+    max-width: 50%;
+  }
+}
