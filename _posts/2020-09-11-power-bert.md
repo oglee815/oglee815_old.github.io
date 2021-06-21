@@ -7,9 +7,9 @@ comments: false
 category: 
 - NLP
 tags:
-- NLP
 - Distilation
-- Test
+- BERT
+- Paper
 ---
 
 ## 어떤 내용의 논문인가요? 👋

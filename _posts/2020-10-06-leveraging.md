@@ -12,6 +12,7 @@ tags:
 - Pretrained Model
 - NLG
 - Google
+- Paper
 ---
 
 NLG Task 에서 PLM을 이용하는 방법에 관한 논문

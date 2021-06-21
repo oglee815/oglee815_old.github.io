@@ -12,6 +12,7 @@ tags:
 - Tokenization
 - 형태소
 - Korean
+- Paper
 ---
 
 Tokenization 방법에 따른 한국어 NLU Task 성능 비교
