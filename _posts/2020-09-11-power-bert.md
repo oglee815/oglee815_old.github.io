@@ -1,6 +1,7 @@
 ---
 layout: post
-date: 2020-09-11 11:42
+date: 2020-01-24 11:42
+reviewed_date: 2020-09-11 11:42
 title: PowerBERT
 description: Accelerating BERT Inference via Progressive Word-vector Elimination
 comments: false

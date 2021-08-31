@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-09-17 14:08
+reviewed_date: 2020-09-17 14:08
 title: Transformers are Graph neural Networks
 description: Transformers are Graph neural Networks
 comments: true

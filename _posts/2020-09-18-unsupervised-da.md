@@ -1,6 +1,7 @@
 ---
 layout: post
-date: 2020-09-17 14:08
+date: 2019-04-29 14:08
+reviewd_date: 2020-09-17 14:08
 title: UNSUPERVISED DATA AUGMENTATION FOR CONSISTENCY TRAINING
 author: Qizhe Xie et.al, Google Research, Brain Team, Carnegie Mellon University
 description: UNSUPERVISED DATA AUGMENTATION FOR CONSISTENCY TRAINING
