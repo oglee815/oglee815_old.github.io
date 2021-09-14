@@ -6,11 +6,11 @@ title: PowerBERT
 description: Accelerating BERT Inference via Progressive Word-vector Elimination
 comments: false
 category: 
-- NLP
+- Paper
 tags:
 - Distilation
 - BERT
-- Paper
+- NLP
 ---
 
 ## 어떤 내용의 논문인가요? 👋

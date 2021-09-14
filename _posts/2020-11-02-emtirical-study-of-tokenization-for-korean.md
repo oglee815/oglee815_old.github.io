@@ -8,8 +8,9 @@ description: An Empirical Study of Tokenization Strategies for Various Korean NL
 comments: true
 math: true
 category: 
-- NLP
+- Paper
 tags:
+- NLP
 - Tokenization
 - 형태소
 - Korean

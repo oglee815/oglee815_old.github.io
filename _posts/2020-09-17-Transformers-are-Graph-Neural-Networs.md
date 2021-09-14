@@ -7,7 +7,7 @@ description: Transformers are Graph neural Networks
 comments: true
 math: true
 category: 
-- NLP
+- Blog
 tags:
 - Transformers
 - GNN

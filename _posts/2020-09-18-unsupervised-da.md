@@ -8,10 +8,11 @@ description: UNSUPERVISED DATA AUGMENTATION FOR CONSISTENCY TRAINING
 comments: true
 math: true
 category: 
-- NLP
+- Paper
 tags:
 - Transformers
 - Data augmentation
+- NLP
 ---
 
  <!--more-->
