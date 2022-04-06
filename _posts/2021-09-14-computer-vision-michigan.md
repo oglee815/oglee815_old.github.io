@@ -18,6 +18,19 @@ Summary for Online Lecture from University of Michigan
 
 <!--more-->
 
+## Lecture 3. Linear Classfication
+- Hinge Loss : 정답 socre가 다른 class socre중 가장 높은 Score와의 차이가 특정 "margin" 이상이면 loss가 0이됨. 그래프 모습이 문에 달린 hinge 같아서 hinge loss.
+- Loss Debugging 할 때, 모든 score가 랜덤일 때 어떤 loss가 나오는지를 미리 계산해보는게 매우 도움이 됨.
+- 가령, Cross Entropy를 계산할 때, loss= -logP(Y^=y|x=x_)로 계산하는데, 클래스가 C개면 랜덤하게 찍을 경우 확률은 1/C이 된다. 따라서 loss는 -log(1/c) 이고 cifar 10은 클래스가 10개니까 -log(1/10)=2.3 정도이다. 2.3보다 많이 높으면 뭔가 잘못됬다는 것.
+- Multiclass SVM Loss에서 Loss를 0으로 만드는 W는 1개일까?
+  - No. Linear Function으로 score를 계산하기 때문에 scrore = WX+b, 2W, 3W ... 등 여러 W set이 존재 가능
+  - 그럼 그중에 가장 좋은 W는? 이걸 정하기 위해 regularization technique이 필요. Loss에 W의 L2를 더해준다거나 
+- Regularization 하는 이유?
+  - 단순히 loss를 줄이는 모델이 아니라 preference를 적용해서 정할 수 있음
+   - 가령 W의 L2를 더해주면 W 값이 spred 되는 효과가 있음. 하나의 값이 클 때의 L2하고 퍼진 W의 L2를 비교해보면 퍼진 W의 L2가 훨 낮다. L1은 그 반대. 즉 입력 X가 노이즈가 심해서 여러 W의 correlation이 필요하면 L2를 사용하게 좋음
+  - Train data 에 overfit 되는거 방지
+  - Optimization 할 때 추가적인 curvature(곡선?) 제공 가능
+
 ## Lecture 4. Optimization
 
 - Optimization은 결국, Input이 Weight Matrix인 Loss 함수를 최소화 하는 W를 찾는것
@@ -28,9 +41,9 @@ Summary for Online Lecture from University of Michigan
   - W의 갯수만큼 구해야 하기 때문에 **O(Dimension)이 걸리고(느림)**, 어디까지나 **Approximate**에 불과하다.(h값의 모호함)
 - **Analytic Gradient** : 실제로 미분해서 구하는 방법. Fast, exact, error-prone(오류 발생 쉬움)
   - In practice: Always use analytic gradient, but check implementation with numerical gradient. This is called a **gradient check.**
-    - Torch 라이브러리 사용 가능
-    - <span class='centered_small'>![3](/assets/img/michigan/3.png)</span>
-    - gradgradcheck 함수는 2차 미분 확인용임
+  - Torch 라이브러리 사용 가능
+  - <span class='centered_small'>![3](/assets/img/michigan/3.png)</span>
+  - gradgradcheck 함수는 2차 미분 확인용임
 - **Gradient Decent** 
   - Iteratively step in the direction of the negative gradient(direction of local steepest descent)
   - <span class='centered_small'>![4](/assets/img/michigan/4.png)</span>
