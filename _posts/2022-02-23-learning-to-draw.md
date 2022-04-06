@@ -40,13 +40,13 @@ In this work, we explore a visual communication channel between agents that are 
 - <span class='centered'>![overview2](/assets/img/learning_to_draw/overview2.jpg)</span>
   - Sender가 그림을 입력으로 받고 스케치를 해서 Receiver에게 주면 Receiver는 전달 받은 스케치와 여러 그림 중 정답 그림을 맵핑하는 작업을 통해 학습
 - Loss Function
-  - <span>![loss](/assets/img/learning_to_draw/loss.jpg)</span>
+  - <span>![loss](/assets/img/learning_to_draw/loss.JPG)</span>
   - where <u>x is the score vector</u> produced by the receiver, and <u>y is the true index of the target</u>
   - 정답이 아닌 j에 대한 score xj는 낮을수록 좋고, 정답 y에 대한 score인 xy는 높이되 값이 커져서 우측 값이 음수가 되면 0을 loss로 취함<a class="color_a" href="https://www.youtube.com/watch?v=KT4iD6yiqwo&list=PL1Kb3QTCLIVtyOuMgyVgT-OeW0PYXl3j5&index=2">(설명 링크)</a>
   - hinge loss 설명
-    - <span>![hinge](/assets/img/learning_to_draw/hinge.jpg)</span>
+    - <span>![hinge](/assets/img/learning_to_draw/hinge.JPG)</span>
     - i == j 를 제외하지 않고 loss에 포함시키면 max( 0, 1) 이 loss에 추가되어 결과적으로 loss가 1이 증가하게 된다.
     - sum 대신 mean을 사용해도 되지만 어차피 loss minimize 관점에서는 똑같다.
   - Perceptual Loss
-    - <span>![loss2](/assets/img/learning_to_draw/loss2.jpg)</span>
-    - <span>![loss3](/assets/img/learning_to_draw/loss3.jpg)</span>
+    - <span>![loss2](/assets/img/learning_to_draw/loss2.JPG)</span>
+    - <span>![loss3](/assets/img/learning_to_draw/loss3.JPG)</span>
