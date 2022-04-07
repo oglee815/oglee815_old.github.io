@@ -4,7 +4,7 @@ date: 2022-04-08 00:00
 reviewed_date: 2022-04-08 14:00
 title: Newspresso with TiME
 author: oglee
-description: 영어 공부
+description: study
 comments: true
 math: true
 category:
