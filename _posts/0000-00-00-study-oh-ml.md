@@ -8,8 +8,9 @@ description: Machine learning
 comments: true
 math: true
 category:
-- Book
+- Study
 tags:
+- Book
 - Machine Learning
 ---
 

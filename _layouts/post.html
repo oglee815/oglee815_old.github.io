@@ -12,9 +12,9 @@ layout: default
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
       </time>
-      {%- if page.modified_date -%}
+      {%- if page.reviwed_date -%}
         ~ 
-        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+        {%- assign mdate = page.reviwed_date | date_to_xmlschema -%}
         <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
           {{ mdate | date: date_format }}
         </time>

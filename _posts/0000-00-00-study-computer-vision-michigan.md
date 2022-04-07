@@ -8,8 +8,9 @@ description: Online Lecture from University of Michigan
 comments: true
 math: true
 category: 
-- Lecture
+- Study
 tags:
+- Lecture
 - DeepLearning
 - Computer Vision
 ---

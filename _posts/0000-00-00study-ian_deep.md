@@ -1,14 +1,16 @@
 ---
 layout: post
 date: 2021-07-03 14:00
+reviwed_date: 2021-07-03 14:00
 title: DeepLearning
 author: Ian Goodfellow, Yoshua Bengio, Aaron Courvile
 description: DeepLearningBook
 comments: true
 math: true
 category: 
-- Book
+- Study
 tags:
+- Book
 - DeepLearning
 ---
 
