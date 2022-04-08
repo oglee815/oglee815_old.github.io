@@ -1,6 +1,15 @@
 // Fonts
-$base-font-family: "Roboto Slab", "Noto Serif SC", "Noto Serif TC" !default;
-$reading-font-family:  Roboto, "Noto Sans SC", "Noto Sans TC" !default;
+$sans-serif: 'Noto Sans KR';
+$monospace: 'Ubuntu Mono';
+$type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR|Ubuntu+Mono);
+
+// $base-font-family: "Roboto Slab", "Noto Serif SC", "Noto Serif TC" !default;
+// $reading-font-family:  Roboto, "Noto Sans SC", "Noto Sans TC" !default;
+$base-font-family: $sans-serif !default;
+$reading-font-family: $sans-serif !default;
+
 $code-font-family:  "Roboto Mono" !default;
 $handwriting-font-family: "Dancing Script", "Ma Shan Zheng" !default;
 $base-font-size:    16px !default;
