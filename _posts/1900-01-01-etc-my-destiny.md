@@ -2,7 +2,7 @@
 layout: post
 date: 2022-04-14 00:00
 reviewed_date: 2022-04-14 00:00
-title: "[etc] 사주 상담"
+title: "사주 상담"
 author: oglee
 description: "사주 상담 이동헌"
 comments: true
