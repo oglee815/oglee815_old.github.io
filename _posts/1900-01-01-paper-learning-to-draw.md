@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2021-11-09 14:00
-reviewed_date: 2022-02-23
-title: Learning to Draw, Emergent Communication through Sketching(NeurIPS 2021)
+date: 2022-02-23 14:00
+created_date: 2022-02-23 14:00
+title: "[Paper] 2111 Learning to Draw, Emergent Communication through Sketching(NeurIPS 2021)"
 author: Daniela Mihai, Jonathon Hare @The University of Southampton
 description: Learning to Draw
 comments: true

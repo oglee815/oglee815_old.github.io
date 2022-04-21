@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2021-07-03 14:00
-reviwed_date: 2021-07-03 14:00
-title: DeepLearning
+created_date: 2021-07-03 14:00
+title: "[Book] DeepLearning"
 author: Ian Goodfellow, Yoshua Bengio, Aaron Courvile
 description: DeepLearningBook
 comments: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-04-08 00:00
-reviewed_date: 2022-04-08 00:00
+created_date: 2022-04-08 00:00
 title: "[Study] 영어논문쓰기의 정석"
 author: oglee
 description: 백미인 영어 논문쓰기 정석 강의 by 김성우

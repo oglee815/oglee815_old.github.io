@@ -10,22 +10,23 @@ layout: default
     <p class="post-meta">
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: date_format }}
+        Modified : {{ page.date | date: date_format }}
       </time>
-      {%- if page.reviwed_date -%}
-        ~ 
-        {%- assign mdate = page.reviwed_date | date_to_xmlschema -%}
+      {%- if page.created_date -%}
+        <br>
+        Created : 
+        {%- assign mdate = page.created_date | date_to_xmlschema -%}
         <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
-      {%- if page.author -%}
+      <!-- {%- if page.author -%}
         • {% for author in page.author %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
-      {%- endif -%}
+      {%- endif -%} -->
     </p>
 
   </header>

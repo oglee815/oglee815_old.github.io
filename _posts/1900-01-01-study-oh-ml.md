@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2017-12-05 00:00
-reviewed_date: 2022-02-06 14:00
-title: Machine Learning
+date: 2022-02-06 14:00
+created_date: 2022-02-06 14:00
+title: "[Book] Machine Learning"
 author: 오일석
 description: Machine learning
 comments: true

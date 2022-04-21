@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2021-11-08 14:00
-reviewed_date: 2022-02-23
-title: FLEX, Unifying Evaluation for Few-Shot NLP
+date: 2022-02-23 14:00
+created_date: 2022-02-23 14:00
+title: "[Paper] 2111 FLEX, Unifying Evaluation for Few-Shot NLP"
 author: Jonathan Bragg, Arman Cohan, et al. @ Allen AI
 description: Unifying Evaluation for Few-Shot NLP
 comments: true

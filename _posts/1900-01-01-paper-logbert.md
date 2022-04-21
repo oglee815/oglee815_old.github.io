@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2021-03-07 14:00
-reviewed_date: 2021-08-26
-title: LogBERT Log Anomaly Detection via BERT
+date: 2021-08-26 00:00
+created_date: 2021-08-26 00:00
+title: "[Paper] 2103 LogBERT Log Anomaly Detection via BERT"
 author: Haixuan Guo, Shuhan Yuan, and Xintao Wu
 description: LogBERT paper
 comments: true

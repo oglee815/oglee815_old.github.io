@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-04-12 00:00
-reviewed_date: 2022-04-12 00:00
+created_date: 2022-04-12 00:00
 title: "[Book] 일론 머스크, 미래의 설계자 by 애슐리 반스"
 author: oglee
 description: "'일론 머스크, 미래의 설계' by 애슐리 반스 를 읽고"

@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2020-02-13 14:00
-reviewed_date: 2021-02-02 14:00
-title: A Simple Framework for Contrastive Learning of Visual Representations
+date: 2021-02-02 14:00
+created_date: 2021-02-02 14:00
+title: "[Paper] 2002 A Simple Framework for Contrastive Learning of Visual Representations"
 author: Ting Chen, Simon Kornblith, Mohammad Norouzi, Geoffrey Hinton
 description: A Simple Framework for Contrastive Learning of Visual Representations
 comments: true

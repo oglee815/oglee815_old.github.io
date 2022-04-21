@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2020-10-01 14:00
-reviewed_date: 2021-08-31 14:00
-title: TOD-BERT, Pre-trained Natural Language Understanding for Task-Oriented Dialogue
+date: 2021-08-31 14:00
+created_date: 2021-08-31 14:00
+title: "[Paper] 2010 TOD-BERT, Pre-trained Natural Language Understanding for Task-Oriented Dialogue"
 author: Chien-Sheng Wu, Steven Hoi, Richard Socher, and Caiming Xiong
 description: TOD-BERT paper
 comments: true
@@ -19,13 +19,14 @@ BERT와 Contrastive objective modeling 방식을 TOD에 적용
  <!--more-->
 
 ## Abstract
+
 > The underlying difference of linguistic patterns between general text and task-oriented dialogue makes existing pre-trained language models less useful in practice. In this work, we unify nine human-human and multi-turn task-oriented dialogue datasets for language
 modeling. To better model dialogue behavior during pre-training, we incorporate user and system tokens into the masked language
 modeling. We propose a contrastive objective function to simulate the response selection task. Our pre-trained task-oriented dialogue BERT (TOD-BERT) outperforms strong baselines like BERT on four downstream taskoriented dialogue applications, including intention recognition, dialogue state tracking, dialogue act prediction, and response selection. We also show that TOD-BERT has a stronger
 few-shot ability that can mitigate the data scarcity problem for task-oriented dialogue.
 
+## Introduction
 
-##  Introduction
 - BERT, RoBERTa 등의 PLM을 활용하여 English Wikipedia or books의 NLU에 활용하는 사례는 많으나, conversational corpora에 바로 이용하기는 어려움.
 - One possible reason could be the **intrinsic difference of linguistic patterns** between human conversations and writing text, resulting in a large gap of data distributions
   - Convesational Text에 BERT를 그대로 사용하기 힘든점(From PLATO paper)

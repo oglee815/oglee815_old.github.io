@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2019-09-01 14:00
-reviewed_date: 2021-09-14 14:00
-title: Deep Learning for Computer Vision (EECS 498-007/598-005)
+date: 2021-09-14 14:00
+created_date: 2019-09-01 14:00
+title: "[Study] Deep Learning for Computer Vision (EECS 498-007/598-005)"
 author: Justin Johnson
 description: Online Lecture from University of Michigan
 comments: true

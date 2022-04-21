@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-04-09 00:00
-reviewed_date: 2022-04-09 00:00
+created_date: 2022-04-09 00:00
 title: "[에세이] 직원의 이직에 도움이 되는 회사"
 author: oglee
 description: 소프트웨어 기업경영 에세이 과제 "내가 경영자라면"

@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2022-04-06 00:00
-reviewed_date: 2022-04-06 14:00
-title: Prompt Learning Paper Concepts Summary
+created_date: 2022-04-06 14:00
+title: "[Paper] Prompt Learning Paper Concepts Summary"
 author: oglee
 description: Prompt Learning
 comments: true

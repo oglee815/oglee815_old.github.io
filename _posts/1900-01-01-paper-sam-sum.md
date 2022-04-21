@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2019-11-29 14:00
-reviewed_date: 2021-02-02 14:00
-title: SAMSum Corpus- A Human-annotated Dialogue Dataset for Abstractive Summarization
+date: 2021-02-02 14:00
+created_date: 2021-02-02 14:00
+title: "[Paper] 1911 SAMSum Corpus- A Human-annotated Dialogue Dataset for Abstractive Summarization"
 author: Bogdan Gliwa, Iwona Mochol, Maciej Biesek, Aleksander Wawer @ Samsung R&D Institute Poland
 description: SAMSum Corpus- A Human-annotated Dialogue Dataset for Abstractive Summarization
 comments: true

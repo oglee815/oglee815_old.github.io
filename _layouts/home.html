@@ -20,8 +20,8 @@ layout: default
       {%- for post in posts -%}
       <li>
         <div class="categori-home">
-          <time datetime="{{ post.reviewed_date | date_to_xmlschema }}" itemprop="datePublished">
-            {{ post.reviewed_date | date: date_format }}
+          <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ post.date | date: date_format }}
           </time>
           {% if post.categories.size > 0 %}
           <span> / </span>

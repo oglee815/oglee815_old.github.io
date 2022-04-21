@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2019-04-29 14:08
-reviewd_date: 2020-09-17 14:08
-title: UNSUPERVISED DATA AUGMENTATION FOR CONSISTENCY TRAINING
+date: 2020-09-17 14:08
+created_date: 2020-09-17 14:08
+title: "[Paper] (작성중) 1904 UNSUPERVISED DATA AUGMENTATION FOR CONSISTENCY TRAINING"
 author: Qizhe Xie et.al, Google Research, Brain Team, Carnegie Mellon University
 description: UNSUPERVISED DATA AUGMENTATION FOR CONSISTENCY TRAINING
 comments: true
@@ -15,6 +15,7 @@ tags:
 - NLP
 ---
 
+작성중
  <!--more-->
 # Abstract
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2020-10-06 14:00
-reviewed_date: 2020-11-02 14:00
-title: An Empirical Study of Tokenization Strategies for Various Korean NLP Tasks
+date: 2020-11-02 14:00
+created_date: 2020-11-02 14:00
+title: "[Paper] 2010 An Empirical Study of Tokenization Strategies for Various Korean NLP Tasks"
 author: Kyubyong Park et.al @Kakao Brain
 description: An Empirical Study of Tokenization Strategies for Various Korean NLP Tasks
 comments: true

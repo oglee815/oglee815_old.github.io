@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-04-13 00:00
-reviewed_date: 2022-04-13 00:00
+created_date: 2022-04-13 00:00
 title: "[Diary] Daily log"
 author: oglee
 description: 업무 관련 내용 정리
