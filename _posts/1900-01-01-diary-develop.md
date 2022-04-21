@@ -26,3 +26,10 @@ SimCSE의 경우, avg pooling으로 바꾸면 40점대는 나온다.
 <u>왜냐하면, 기존 코드는 attention_mask 길이가 prompt를 제외한 실제 입력 토큰의 길이만큼 avg를 때리는데, 여기에 prompt까지 넣어서 함께 avg pooling을 해야한다.</u>
 근데 bert의 최종 output은 prompt가 없는 실제 입력 토큰의 last_hidden만 나오도록 구현이 되어있다.
 이걸 어떻게 해결해야 하나?
+
+### 2022-04-14 목
+
+어제 고민하던 prompt 가 붙는 경우, attention mask를 어떻게 걸어야하는 문제에 대한 해결책을 찾음<br>
+그냥 마지막 레이어에서 나온 실제 token들에 대한 last hidden들에 대해서만 avg pooling 하도록 attention_mask를 해당 길이만큼 만든 다음에 avg pooling 한다.<br>
+그러다보니 생각보다 성능이 안나옴. SimCSE가 오히려 성능이 좋음. prompt가 없는 채로 pooling을 해서 그런가..? <br>
+KoELECTRA가 성능이 어쨌든 unsupervised로 KorSTS 40점대밖에 안나오다보니 그냥 kobert(monolog)로도 해보는중..

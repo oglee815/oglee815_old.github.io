@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-04-07 00:00
-reviewed_date: 2022-04-07 00:00
+reviewed_date: 2022-04-21 00:00
 title: "[Study] Newspresso with TIME"
 author: oglee
 description: study
@@ -19,10 +19,6 @@ Newspresso with TiME 모르는 단어 & 문장
 
 # Vol 1
 
-## Sentences
-
-- 2
-
 ## Vocabulary
 
 - <span style="color:red">cranky</span>
@@ -37,3 +33,11 @@ Newspresso with TiME 모르는 단어 & 문장
 - <span style="color:red">antithetical</span>
   - '정반대의, 상반되는(=contrasted, oppsite)'의 뜻. 전치사 to와 함께 antithetical to sth의 형태로 쓰임
   - The arguments occurred between the protestors and the government supporters are <u>antithetical</u> to each other.
+
+# Vo2 What Jeff Bezos' Philanthropy Tells us about his new priorities and what change they may bring
+
+## Vocabulary
+
+- <span style="color:red">newly minted pseudo astronaut</span>
+  - 최근에 유사 우주인이 된
+  - minted는 '동전을 주조하다'라는 의미가 있는데요, mint condition이라는 표현처럼 막 만들어진 동전처럼 깨끗하고 빛나는 상태를 나타내는 형용사로 쓰임. 막 만들어진, 막 ~이 된
