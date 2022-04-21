@@ -25,6 +25,8 @@ DCPCSE 논문을 KoELECTRA에 적용해서 KorSTS 점수 확인하기
 - HuggingFace 기존 코드에는 Electra에 past_key_values를 넘기는 코드가 없어서 해당 코드를 넣음. dcpcse에서는 prompt가 past_key_values로 각 레이어로 넘어가도록 되어 있기 때문
 - 또, Avg pooling을 위해, 마지막 레이어에서 나온 실제 token들에 대한 last hidden들에 대해서만 avg pooling 하도록 attention_mask를 해당 길이만큼 만든 다음에 avg pooling 한다. (prompt는 avg pool에서 제외)
 ```python
+# 아래처럼 last_hidden 의 길이와 attention_mask의 길이가 다르면 에러가 나기 때문에 맞춰줘야함.
+# 그냥 dcpcse코드에는 attention_mask가 input_sequence + promt_length로 만들어짐
 elif self.pooler_type == "avg":
     return ((last_hidden * attention_mask.unsqueeze(-1)).sum(1) / attention_mask.sum(-1).unsqueeze(-1))
 ```
