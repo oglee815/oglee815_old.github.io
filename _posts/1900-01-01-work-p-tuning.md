@@ -24,10 +24,10 @@ DCPCSE 논문을 KoELECTRA에 적용해서 KorSTS 점수 확인하기
 - DCPCSE 논문을 KoELECTRA에 적용해서 KorSTS 점수 확인중.
 - HuggingFace 기존 코드에는 Electra에 past_key_values를 넘기는 코드가 없어서 해당 코드를 넣음. dcpcse에서는 prompt가 past_key_values로 각 레이어로 넘어가도록 되어 있기 때문
 - 또, Avg pooling을 위해, 마지막 레이어에서 나온 실제 token들에 대한 last hidden들에 대해서만 avg pooling 하도록 attention_mask를 해당 길이만큼 만든 다음에 avg pooling 한다. (prompt는 avg pool에서 제외)
-  - ```python
+```python
 elif self.pooler_type == "avg":
     return ((last_hidden * attention_mask.unsqueeze(-1)).sum(1) / attention_mask.sum(-1).unsqueeze(-1))
-  ```
+```
 - 근데 점수가 너무 안좋다. 아무리 unsupervised 이지만 30점대가 나온다. 
 - SimCSE의 경우, avg pooling으로 바꾸면 40점대는 나온다. 
 
