@@ -19,7 +19,9 @@ Newspresso with TiME 모르는 단어 & 문장
 
 # Vol 1
 
-## Vocabulary
+## 01 Health Tracker
+
+### Vocabulary
 
 - <span style="color:red">cranky</span>
   - '불쾌하고 쉽게 짜증을 내는 사람'이라는 명사 crank에 형용사 어미 -y가 붙으면 '까다로운(=particular), 짜증을 잘 내는(=crotchety)'를 의미
@@ -33,10 +35,16 @@ Newspresso with TiME 모르는 단어 & 문장
 - <span style="color:red">antithetical</span>
   - '정반대의, 상반되는(=contrasted, oppsite)'의 뜻. 전치사 to와 함께 antithetical to sth의 형태로 쓰임
   - The arguments occurred between the protestors and the government supporters are <u>antithetical</u> to each other.
+- <span style="color:red">exploit</span>
+  - 무언가, 누군가를 부당하게 이용하거나 착취함. 명사로 쓰이면 '위업', '업적'
+  - The manager frequently exploits his authority by getting other people to do things for him.
+- <span style="color:red">nudge</span>
+  - 무엇을 알리기 위해 '팔꿈치로 살짝 쿡 찌르거나 가볍게 자극을 준다'는 본래의 뜻 외에도, 경제학이나 마케팅에서 '사람들의 선택을 유도하는 부드러운 개입'이라는 뜻으로 자주 등장하는 단어
+  - If you have a friend who is always late, <u>nudge</u> him or her with a phone call an hour before the occassion.
 
-# Vo2 What Jeff Bezos' Philanthropy Tells us about his new priorities and what change they may bring
+## Vo2 What Jeff Bezos' Philanthropy Tells us about his new priorities and what change they may bring
 
-## Vocabulary
+### Vocabulary
 
 - <span style="color:red">newly minted pseudo astronaut</span>
   - 최근에 유사 우주인이 된
