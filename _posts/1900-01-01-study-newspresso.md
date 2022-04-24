@@ -41,6 +41,23 @@ Newspresso with TiME 모르는 단어 & 문장
 - <span style="color:red">nudge</span>
   - 무엇을 알리기 위해 '팔꿈치로 살짝 쿡 찌르거나 가볍게 자극을 준다'는 본래의 뜻 외에도, 경제학이나 마케팅에서 '사람들의 선택을 유도하는 부드러운 개입'이라는 뜻으로 자주 등장하는 단어
   - If you have a friend who is always late, <u>nudge</u> him or her with a phone call an hour before the occassion.
+- <span style="color:red">facilitator</span>
+  - 일을 용이하게 하는 조력(협력)자, 촉진제. 
+  - 모두연 퍼실이
+  - The teachre acts as a <u>facilitator</u> of learning in classroom.
+- <span style="color:red">impediment</span>
+  - 무언가의 진행을 막는 장애, 장애물
+  - 동사 impede(지연시키다, 방해시키다)의 명사
+  - 말을 더듬는 등의 언어 장애(speech impediment)를 지칭할 때도 사용
+  - Being uncooperative can be a huge <u>impediment</u> to the team in carrying out its job.
+- <span style="color:red">unequivocally</span>
+  - 명백히, 분명하게(=unambiguously)
+  - equivocally(분명하지 않게, 모호하게)에 부정 접두어 un을 붙임.
+  - Everyone should commit <u>unequivocally</u> to that goal and work together to achieve it.
+- <span style="color:red">to that end</span>
+  - '이를 위해서, 그 목적에 맞도록'이라는 뜻으로 자주 쓰이는 관용어
+  - for that reason, with that goal 등이 비슷
+  - <u>To that end</u>, we need both positive and negative feedback from our customers.
 
 ## Vo2 What Jeff Bezos' Philanthropy Tells us about his new priorities and what change they may bring
 
