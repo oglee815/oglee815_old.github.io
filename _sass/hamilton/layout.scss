@@ -491,9 +491,9 @@ ul.post-categories {
     font-family: $base-font-family;
   }
 
-  h2         { margin-top: $spacing-unit * 2 }
-  h3         { margin-top: $spacing-unit * 1.5 }
-  h4, h5, h6 { margin-top: $spacing-unit }
+  // h2         { margin-top: $spacing-unit * 2 }
+  // h3         { margin-top: $spacing-unit * 1.5 }
+  // h4, h5, h6 { margin-top: $spacing-unit }
 
   h2 {
     @include relative-font-size(1.4);
