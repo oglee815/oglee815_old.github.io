@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2022-04-25 00:00
+date: 2022-04-26 00:00
 created_date: 2022-04-07 00:00
 title: "[Study] Newspresso with TIME"
 author: oglee
@@ -58,6 +58,9 @@ Newspresso with TiME 모르는 단어 & 문장
   - '이를 위해서, 그 목적에 맞도록'이라는 뜻으로 자주 쓰이는 관용어
   - for that reason, with that goal 등이 비슷
   - <u>To that end</u>, we need both positive and negative feedback from our customers.
+- <span style="color:red">dispiriting</span>
+  - 열정이나 에너지를 dis 하다. 낙담스럽고 의기소침하게 만든다.
+  - It was <u>dispiriting</u> to see only few people attending the conference.
 
 ## Vo2 What Jeff Bezos' Philanthropy Tells us about his new priorities and what change they may bring
 
