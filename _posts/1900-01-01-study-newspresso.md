@@ -61,7 +61,27 @@ Newspresso with TiME 모르는 단어 & 문장
 - <span style="color:red">dispiriting</span>
   - 열정이나 에너지를 dis 하다. 낙담스럽고 의기소침하게 만든다.
   - It was <u>dispiriting</u> to see only few people attending the conference.
-
+- <span style="color:red">longstanding</span>
+  - 대상이 '오랜 기간에 걸쳐 존재해 온' 이라는 뜻의 형용사
+  - They want to turn the page on this <u>long-standing</u> dispute.
+- <span style="color:red">make a verbal commitment</span>
+  - 구두로 공약하다, 헌신하다
+  - They have <u>made a verbal commitment</u> to consume their products.
+- <span style="color:red">vexing</span>
+  - 성가시고 귀찮은 무언가를 묘사할 때 사용
+  - 동사 vex(성가시게, 짜증나게 하다)의 현재분사 형태
+  - He said that emphasis should be on solving <u>vexing</u> problems, not assigning blame for what has gone wrong.
+- <span style="color:red">enshrine</span>
+  - 무언가를 소중히 간직하다, 모시다
+  - 수동형 be enshrined in 의 형태로 자주 쓰임
+  - The sacred treasures <u>are enshrined in</u> this temple
+- <span style="color:red">cascading</span>
+  - 연쇄적인, 계속되는
+  - 무언가 폭포처럼 연속적으로 흘러내리는 의미
+  - The enviromental action group is discussing the <u>cascading</u> consequencesof climate hazards and how to prevent them.
+- <span style="color:red">rampant</span>
+  - 걷잡을 수 없이 만연하는(=unchecked)
+  - Unemployment has been <u>rampant</u> since the outbreak of COVID-19
 ## Vo2 What Jeff Bezos' Philanthropy Tells us about his new priorities and what change they may bring
 
 ### Vocabulary
