@@ -4,7 +4,7 @@ date: 2022-05-10 14:00
 created_date: 2022-05-10 14:00
 title: "[Paper] 2204 DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings"
 author: Yung-Sung Chuang, Yoon Kim et al.
-description: DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings
+description: "DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings"
 comments: true
 math: true
 category: 
