@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-05-10 14:00
-created_date: 2022-05-10 14:00
+date: 2022-05-10 00:00
+created_date: 2022-05-10 00:00
 title: "[Study] Prompt Learning overview"
 author: Oglee
 description: Prompt-Based Learning
