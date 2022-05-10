@@ -1,5 +1,23 @@
-# Reviewer
-@oglee815 
+---
+layout: post
+date: 2022-05-10 14:00
+created_date: 2022-05-10 14:00
+title: "[Paper] 2204 DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings
+author: Yung-Sung Chuang, ... , Yoon Kim et al.
+description: DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings
+comments: true
+math: true
+category: 
+- Paper
+tags:
+- NLP
+- SimCSE
+- DiffCSE
+- Contrastive Learning
+---
+
+DiffCSE 리뷰
+<!--more-->
 
 # Abstract
 _We propose **DiffCSE, an unsupervised contrastive learning framework** for learning sentence embeddings. DiffCSE learns sentence embeddings that are **sensitive to the difference between the original sentence and an edited sentence**, where the edited sentence is obtained by stochastically masking out the original sentence and then sampling from a masked language model. We show that DiffSCE is an instance of equivariant contrastive learning (Dangovski et al., 2021), which generalizes contrastive learning and learns representations that are insensitive to certain types of augmentations and sensitive to other “harmful” types of augmentations. Our experiments show that DiffCSE achieves state-of-the-art results among unsupervised sentence representation learning methods, outperforming unsupervised SimCSE1 by 2.3 absolute points on semantic textual similarity tasks_
