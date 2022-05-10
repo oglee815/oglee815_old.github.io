@@ -20,7 +20,7 @@ Prompt Learning overview(대부분의 출처 : https://www.youtube.com/watch?v=q
 # Introduction
 - GPT3의 Parameter는 **175B**이다. 과연 우리가 이걸 Fine-tuning 할 수 있을까?
   - '할 수 있다 없다'의 문제가 아니라 **할 필요가 없다.**
-  - Zero-shot, Few-shot Learning이 가능하기 때문.
+  - Zero-shot, Few-shot Learning이 가능하기 때문(애초에 paper 이름 자체가 'language models are few-shot learners')
   - ![그림1](https://user-images.githubusercontent.com/18374514/167583955-f0d91cfc-6185-43eb-ae1c-2e46e622ad69.png)[1]
   - 이게 가능한 이유는 모델의 **pretraining 방식이 In-context learning과 동일하기 때문**
     - ![image](https://user-images.githubusercontent.com/18374514/167589381-8be3d23c-97bc-4121-a51a-d0a2f21c2a53.png)
