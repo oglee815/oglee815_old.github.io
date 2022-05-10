@@ -37,13 +37,13 @@ _We propose **DiffCSE, an unsupervised contrastive learning framework** for lear
 - **Invariant Contrastive Learning**
   - 입력 x에 대하여, f(T(x)) = f(x) 가 되도록 f를 훈련
   - Transformation에 invariant 한 값을 출력하도록 학습. **insensitive to Transformation(G)**
-  ![image](https://user-images.githubusercontent.com/18374514/167547477-16a66a22-2cf2-4c1b-b8a6-2fd90842fda4.png)
+  - ![image](https://user-images.githubusercontent.com/18374514/167547477-16a66a22-2cf2-4c1b-b8a6-2fd90842fda4.png)
   - 그러나 Transformation에 따라서 Semantic 한 정보가 변경되는 경우가 허다하기 때문에 단점이 있는 학습법
   - Understanding the role of **input transformations is crucial** for successful contrastive learning.
   - But some of revealed transformations are shown to be harmful for CL.
     - Ex) image rotation or MLM in NLP
     - SimCSE에 나와 있는 MLM을 Augmentation 방식으로 사용했을 경우의 결과
-    ![image](https://user-images.githubusercontent.com/18374514/167335228-5ce32aea-97c9-4878-b397-57b60c5f627e.png)
+    - ![image](https://user-images.githubusercontent.com/18374514/167335228-5ce32aea-97c9-4878-b397-57b60c5f627e.png)
 
 - **Equivariant Contrastive Learning**
   - 입력 x에 대하여, f(T(x)) = T'(f(x)) 가 되도록 f를 훈련, T'이 identity function이면 ICL과 동일
@@ -58,7 +58,7 @@ _We propose **DiffCSE, an unsupervised contrastive learning framework** for lear
 - DiffCSE는 결국 Equivariant CL 페이퍼의 NLP 버전이다. ECL에서처럼 Hybrid 방식으로 CL을 진행(ICL+ECL). 
 - ![image](https://user-images.githubusercontent.com/18374514/167334643-80ad1e39-674b-463d-9114-8e4fcc71faa8.png)
 - 위 그림의 왼쪽에서 보듯이, SimCSE의 Loss 또한 그대로 사용
-![image](https://user-images.githubusercontent.com/18374514/167548059-cd176bbe-45f7-4aff-9e0b-5d799260c84d.png)
+- ![image](https://user-images.githubusercontent.com/18374514/167548059-cd176bbe-45f7-4aff-9e0b-5d799260c84d.png)
 - **Sentence Encoder로는 BERT, RoBERTa** 등 사용
 - 오른쪽은 **Conditional ELECTRA 사용**
   - input x에 random masking(30%)을 해서 X'을 만듦.
