@@ -35,7 +35,7 @@ Prompt Learning overview(대부분의 출처 : https://www.youtube.com/watch?v=q
 
 # Few-shot 혹은 Zero-shot 성능을 높이는 방법이 뭔데? 
 - Prompt Design(Engineering)을 잘하면 된다.
-- Prompt란? Language 모델이 문제를 Few-shot, Zero-shot으로도 잘 풀 수 있도록 입력을 잘 변형하는 것.
+- Prompt란? Language 모델이 문제를 Few-shot, Zero-shot으로도 잘 풀 수 있도록 입력을 변환시킨 일종의 Text Template.
   - ![image](https://user-images.githubusercontent.com/18374514/167590914-152aa992-2d13-4b6d-8c10-8cd82b406a45.png)[1]
 - 그런데 이 Prompt Engineering을 hand crafted 한 방식으로 정하게 되면 문제가 생긴다.
   - ![image](https://user-images.githubusercontent.com/18374514/167592030-360ae6aa-552f-453f-a38e-26ebb0b0d40e.png)
