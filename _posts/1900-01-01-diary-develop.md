@@ -39,3 +39,5 @@ KoELECTRA가 성능이 어쨌든 unsupervised로 KorSTS 40점대밖에 안나오
 - /diffcse/trainers.py, 514 라인
   -  model.sim.pos_avg --> sim attribute가 없다고 에러 발생 --> model.moduel.sim 으로 변경
   -  
+- python 3.9 재설치
+  - https://codechacha.com/ko/ubuntu-install-python39/
