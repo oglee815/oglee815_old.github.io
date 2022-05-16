@@ -41,3 +41,5 @@ KoELECTRA가 성능이 어쨌든 unsupervised로 KorSTS 40점대밖에 안나오
   -  
 - python 3.9 재설치
   - https://codechacha.com/ko/ubuntu-install-python39/
+- Transformers==4.11 (tokenizer_class 인자를 인식 못하는 에러 때문에 이 버전으로 설치)
+- torch==1.7.1
