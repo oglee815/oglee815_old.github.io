@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2022-04-26 00:00
+date: 2022-05-17 00:00
 created_date: 2022-04-07 00:00
 title: "[Study] Newspresso with TIME"
 author: oglee
@@ -82,10 +82,36 @@ Newspresso with TiME 모르는 단어 & 문장
 - <span style="color:red">rampant</span>
   - 걷잡을 수 없이 만연하는(=unchecked)
   - Unemployment has been <u>rampant</u> since the outbreak of COVID-19
+
 ## Vo2 What Jeff Bezos' Philanthropy Tells us about his new priorities and what change they may bring
 
 ### Vocabulary
 
+- <span style="color:red">philanthropy</span>
+  - '사랑'의 뜻을 가진 phil-과 '인간'을 뜻하는 anthropos 가 그 어원으로, 말 그대로 인류에 대한 사랑, 박애를 나타내는 단어
+  - 박애의 행위, 자선 사업 등을 의미
+  - No one is going to invest money in <u>philanthropy</u> unless there is some business payback.
+
 - <span style="color:red">newly minted pseudo astronaut</span>
   - 최근에 유사 우주인이 된
   - minted는 '동전을 주조하다'라는 의미가 있는데요, mint condition이라는 표현처럼 막 만들어진 동전처럼 깨끗하고 빛나는 상태를 나타내는 형용사로 쓰임. 막 만들어진, 막 ~이 된
+- <span style="color:red">high profile</span>
+  - 대중의 주목을 많이 받고 있는 대상
+  - low profile은 반대의 의미
+  - While some <u>high profile</u> projects have been killed off, the government has no idea how to replace them.
+- <span style="color:red">TIME cover subject</span>
+  - 타임지 표지모델
+- <span style="color:red">inaugurate</span>
+  - '어떤 사람이 공식적으로 어떤 직무를 시작하게 하다,', 즉 '취임 시키다', 혹은 단체나 조직 등의 '공식적인 시작을 알리다' 혹은 '시작을 선언하다'와 같은 뜻으로도 쓰인다.
+  - Instead of inaugurating a new style of poplular policis, the government repeats ancient practice with violence and retribution(응징).
+- <span style="color:red">czar</span>
+  - 1917년 혁명 이전의 러시아의 황제를 차르(czar)라고 불렀음.
+  - 조직에서 막강한 권력을 갖고 있는 제일인자, 총책을 이렇게 표현 할 수 있음
+  - On Friday, the government will be appointing a 'drug czar' to coordinate our action against drugs.
+- <span style="color:red">vilifier</span>
+  - vilify는 상대에 대한 평가를 철하시킬 목적의 비난을 말함. vilifier는 비난 하는 사람
+  - Some actors are often vilified for stating their political views on Social Media.
+- <span style="color:red">ad hominem</span>
+  - 말이 아닌 사람 자체를 트집잡아 그 말을 비판하는 오류.
+  - 예를 들어, '당신은 ㅇ너리고 경험이 없기 때문에 당신의 주장은 틀렸다.'와 같은 오류
+  - The opposition will condemn those who are in favor of the new legislation using <u>ad hominem</u> attacks instead of debating the issues
