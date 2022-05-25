@@ -2,7 +2,7 @@
 layout: post
 date: 2022-05-25 00:00
 created_date: 2022-05-25 00:00
-title: "[work] layer size mismatch(torch)"
+title: "[work] layer size mismatch (pytorch)"
 author: oglee
 description: layer size mismatch(torch)
 comments: true
