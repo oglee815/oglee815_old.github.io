@@ -21,6 +21,7 @@ huggingface에서 from_pretrained시 이름이 같은 레이어인데 size가 �
 
 - label이 3개인 데이터에 모델을 학습하고 이 모델을 레이블이 10개인 데이터에 적용하기 위해 from_pretrained 하면 에러뜸
 - 해결책 예시
+
 ```python
 from transformers import XLMRobertaForSequenceClassification
 from transformers import AutoConfig
@@ -35,5 +36,6 @@ for i, j in state_dict.items():   # search all key from model
     temp[name] = j
 model.load_state_dict(temp, strict=False)
 ```
+
 - https://re-code-cord.tistory.com/entry/Pytorch-Tips-for-Loading-Pre-trained-Model
 - https://cchhoo407.tistory.com/37
