@@ -2,16 +2,17 @@
 layout: post
 date: 2022-05-25 00:00
 created_date: 2022-05-25 00:00
-title: "[work] vim에서 default로 mouse=r 설정"
+title: "[work] layer size mismatch(torch)"
 author: oglee
-description: vim에서 default로 mouse=r 설정
+description: layer size mismatch(torch)
 comments: true
 math: true
 category:
 - Work
 tags:
-- Vim
-- Docker
+- pytorch
+- huggingface
+- form_pretrained
 ---
 
 huggingface에서 from_pretrained시 이름이 같은 레이어인데 size가 다를때 나는 에러
@@ -19,7 +20,6 @@ huggingface에서 from_pretrained시 이름이 같은 레이어인데 size가 �
 <!--more-->
 
 - label이 3개인 데이터에 모델을 학습하고 이 모델을 레이블이 10개인 데이터에 적용하기 위해 from_pretrained 하면 에러뜸
-- 
 - 해결책 예시
 ```python
 from transformers import XLMRobertaForSequenceClassification
