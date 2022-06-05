@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-06-05 00:00
-created_date: 2022-06-05 00:00
+date: 2022-06-04 00:00
+created_date: 2022-06-04 00:00
 title: "[펌]공부란 무엇인가"
 author: oglee
 description: "공부란 무엇인가"
