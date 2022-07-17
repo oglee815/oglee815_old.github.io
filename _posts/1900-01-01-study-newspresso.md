@@ -115,3 +115,36 @@ Newspresso with TiME 모르는 단어 & 문장
   - 말이 아닌 사람 자체를 트집잡아 그 말을 비판하는 오류.
   - 예를 들어, '당신은 ㅇ너리고 경험이 없기 때문에 당신의 주장은 틀렸다.'와 같은 오류
   - The opposition will condemn those who are in favor of the new legislation using <u>ad hominem</u> attacks instead of debating the issues
+
+## Vol3 "Charlie Bit My Finger" is about to leave youtub forever. here's why
+- "찰리가 내 손가락을 물었어" 영상은 유투브를 떠날 예정이다.
+### Grammar
+- 분사 구문의 주어
+  - ing 로 접속사 주어 없애기
+    - They decided to auction off ownership of their viral video, <u>so that they situated it in a new digital sapce. </u>
+    - They decided to auction off ownership of their viral video, <u>situating</u> it in a new digital sapce.
+  - 주어가 다를 경우, 주어를 그냥 없애며 면 안된다.
+    - An entire genre of entertainment blossomed in its wake, and the subjects became meme stars.
+    - An entire genre of entertainment blossomed in its wake, <u>the subjects becoming meme starts.</u>
+### Vocab
+- <span style="color:red">unintentional internet superstars</span>
+- ~ became an instant classic of internet culture.
+- ~ remembers the company's fascination(매혹) with the early viral(바이러스 성의) hit.
+- ~ really captivated(마음을 사로잡다) the entire world's imagination.
+- Liu says **over** Google Meet from Taipei
+  - 이럴 때 over를 쓰는구나
+- An entire genre of entertainment **blossomed in its wake **
+  - in its wake:  in the wake of , in its wake 처럼 ~에 뒤이어, ~의 여파로 등으로 사용
+- seminal clip in full
+  - 이후에 전개될 일에 영향을 끼칠 정도로 무엇이 중요하거나 영향력이 있다고 표현할 때 이 단어를 사용
+- the video will **join the ranks** of many pieces of digital art cashing in on the recent **craze** for NFTs, or **non-fungible** tokens
+  - 이 영상은 최근 NFT, 즉 대체 불가능한 토큰의 열풍을 노린 많은 디지털 아트의 대열에 합류하게 된다.
+  - join the ranks : 대열이나 무리에 합류하다
+  - art cashing : cash가 돈이니까 art로 하는 돈???
+  - craze : 대유행
+  - non-fungible : 대체 불가능한
+- it's a chane to further capitalize on their accidental **swipe at fame** 
+  - swipe at fame : 동사로 사용되면 물건이나 팔을 휘덜러 무엇을 맞추려고 시도하다 는 의미. 본문에서는 명사로 사용되어 시도(=attempt)라는 뜻. take a swipe at이라고 하면, 일반적으로 ~을 크게 휘덜러 치다의 의미가 되지만, 비유적인 의미로는 ~을 비난한다는 관용 표현으로도 쓰임
+- establish themselves as a valuable piece
+- secure extra funds to go towards educating ~
+- 
