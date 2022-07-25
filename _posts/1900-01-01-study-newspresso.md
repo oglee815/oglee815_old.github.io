@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2022-05-17 00:00
+date: 2022-07-25 00:00
 created_date: 2022-04-07 00:00
 title: "[Study] Newspresso with TIME"
 author: oglee
@@ -126,6 +126,13 @@ Newspresso with TiME 모르는 단어 & 문장
   - 주어가 다를 경우, 주어를 그냥 없애며 면 안된다.
     - An entire genre of entertainment blossomed in its wake, and the subjects became meme stars.
     - An entire genre of entertainment blossomed in its wake, <u>the subjects becoming meme starts.</u>
+- 관계부사 where
+  - 1) They may change <span style="color:red">their terms and conditions</span> in a year's time.
+  - 2) Acutally uploaded, user-generated content is not important to them anymore under <span style="color:red">their terms and conditions</span>.
+  - --> They may change their terms and conditions in a year's time <span style="color:red">which</span> actually uploaded, user-generated content is not important to them anymore <span style="color:red">under</span>.
+  - --> They may change their terms and conditions in a year's time <span style="color:red">under which</span> actually uploaded, user-generated content is not important to them anymore.
+  - = They may change their terms and conditions in a year's time <span style="color:red">where</span> actually uploaded, user-generated content is not important to them anymore.
+
 ### Vocab
 - <span style="color:red">unintentional internet superstars</span>
 - ~ became an instant classic of internet culture.
@@ -147,4 +154,10 @@ Newspresso with TiME 모르는 단어 & 문장
   - swipe at fame : 동사로 사용되면 물건이나 팔을 휘덜러 무엇을 맞추려고 시도하다 는 의미. 본문에서는 명사로 사용되어 시도(=attempt)라는 뜻. take a swipe at이라고 하면, 일반적으로 ~을 크게 휘덜러 치다의 의미가 되지만, 비유적인 의미로는 ~을 비난한다는 관용 표현으로도 쓰임
 - establish themselves as a valuable piece
 - secure extra funds to go towards educating ~
+- they've **reenacted** the video countless times.
+  - enact는 법을 제정하다, 혹은 극을 상영ㄴ하다, 역할을 연기하다 의 의미가 있음. re를 붙여서 재연하다로 쓰임
+- we try to **keep it on the side** 
+  - 신경을 끄다
+- it just **dies down** to a part of normal life
+  - 차츰 잦아들거나 사그라들다, abate와 대체 가능
 - 
