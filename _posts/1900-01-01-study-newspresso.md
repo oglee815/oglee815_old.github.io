@@ -130,8 +130,11 @@ Newspresso with TiME 모르는 단어 & 문장
   - 1) They may change <span style="color:red">their terms and conditions</span> in a year's time.
   - 2) Acutally uploaded, user-generated content is not important to them anymore under <span style="color:red">their terms and conditions</span>.
   - --> They may change their terms and conditions in a year's time <span style="color:red">which</span> actually uploaded, user-generated content is not important to them anymore <span style="color:red">under</span>.
-  - --> They may change their terms and conditions in a year's time <span style="color:red">under which</span> actually uploaded, user-generated content is not important to them anymore.
-  - = They may change their terms and conditions in a year's time <span style="color:red">where</span> actually uploaded, user-generated content is not important to them anymore.
+  - --> They may change <u>their terms and conditions</u> in a year's time <span style="color:red">under which</span> actually uploaded, user-generated content is not important to them anymore.
+  - = They may change <u>their terms and conditions</u> in a year's time <span style="color:red">where</span> actually uploaded, user-generated content is not important to them anymore.
+- to 부정사의 시제
+  - he claims \[to have sent\] the first digital SMS over a satellite network in 1996.
+
 
 ### Vocab
 - <span style="color:red">unintentional internet superstars</span>
@@ -160,4 +163,12 @@ Newspresso with TiME 모르는 단어 & 문장
   - 신경을 끄다
 - it just **dies down** to a part of normal life
   - 차츰 잦아들거나 사그라들다, abate와 대체 가능
+- Advertising revenue associated with the video has also **dwindled.** 감소하다
+- they became a **go-to** site, 믿고 찾는
+- remain intact(온전한)
+- eyebrow-rasining at ~ (에 대한 불신)
+- quizzical 당혹스러운
+- it's also the **crux** of a current court battle 
+  - 어떤 주장이나 문제의 가장 중요하며 핵심이 되는 부분
+- for the masses(대중)
 - 
