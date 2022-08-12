@@ -42,4 +42,4 @@ text-to-image 관련 페이퍼 정리, dall-e, imagen, parti, glide
   - \\(p_{\psi}\\) denotes the joint distribution over the text and image tokens modeled by the transformer.
 
 ### Stage 1. Learning the visual codebook
-- 
+- Maximize the ELB with respect to $\theta$, $phi$
