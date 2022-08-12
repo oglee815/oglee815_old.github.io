@@ -37,4 +37,4 @@ text-to-image 관련 페이퍼 정리, dall-e, imagen, parti, glide
 - We model this distribution using the factorization 
   - ![image](https://user-images.githubusercontent.com/18374514/184271768-5d36d26e-cef6-447d-9706-ce9f95b1c008.png), which yields the lower bound
   - ![image](https://user-images.githubusercontent.com/18374514/184271731-46aabb30-d3d1-4407-b5d9-87720ef4ebe5.png)
-
+- \\( q_{\theta}\\)
