@@ -31,6 +31,10 @@ text-to-image 관련 페이퍼 정리, dall-e, imagen, parti, glide
 ## Method
 - Our goal is to train a transfrormer to autoregressively model **the text and image tokens** as a single stream of data.
 - Using pixels directly as image tokens would **require an inordinate(지나친) amount of memory** for high-resolution images(MNIST만 해도 28*28 = 784).
-  - Stage 1: Train a discrete variational autoencoder(dVAE) to compress each 256x256 RGB image into a 32x32 grid of image tokens, each element of which can assume 8192 possible values.
-  - Stage 2: Concatenate up to 256 BPE-encoded text tokens with 32x32=1024 image tokens, and train an autoregressive transformer to model the joint distribution over the text and image tokens
-- 
+  - **Stage 1**: Train a discrete variational autoencoder(dVAE) to compress each 256x256 RGB image into a 32x32 grid of image tokens, each element of which can assume 8192 possible values.
+  - **Stage 2**: Concatenate up to 256 BPE-encoded text tokens with 32x32=1024 image tokens, and train an autoregressive transformer to model the joint distribution over the text and image tokens
+- The overall procedure can be viewed as **maximizing the evidence lower bound(ELB)** on the joint likelihood of the model distribution over images x, captions y, and the tokens z for the encoded RGB image.
+- We model this distribution using the factorization 
+  - ![image](https://user-images.githubusercontent.com/18374514/184271768-5d36d26e-cef6-447d-9706-ce9f95b1c008.png), which yields the lower bound
+  - ![image](https://user-images.githubusercontent.com/18374514/184271731-46aabb30-d3d1-4407-b5d9-87720ef4ebe5.png)
+
