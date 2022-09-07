@@ -29,3 +29,6 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - 배치 256, 100M steps, lr=1e-4, B1=0.9, B2=0.999, warmup=10K
 - 0.1 dropout, GELU Activation.
 - <img src="https://user-images.githubusercontent.com/18374514/188924033-29df04ec-918a-4808-a7ec-cc243bfc6956.png" width="300">
+
+#### Byte Pair Encoding vs Byte-level byte pair encoding vs WordPiece
+- 
