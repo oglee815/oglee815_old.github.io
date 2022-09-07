@@ -18,6 +18,7 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 <!--more-->
 
 - Positional Encoding에 관한 설명
+  - pos= the position of the word in a sentence, i = the position of the embedding
   - ![image](https://user-images.githubusercontent.com/18374514/188919880-c7da1047-f3fa-48c6-b3e1-e98ff17624a0.png)
   - <img src="https://user-images.githubusercontent.com/18374514/188919806-0d726905-a441-489a-8c4e-867b8952b893.png" width="300">
 
