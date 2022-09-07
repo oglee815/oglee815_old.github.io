@@ -24,3 +24,8 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 
 - Whole word masking에서 주의할 점
   - whole word를 마스킹하다가 만약 masking ratio가 15%를 넘어가게 되면 다른 토큰을 원복시킬 수도 있다.
+
+- BERT의 pretraining 시 하이퍼파람
+  - 배치 256, 100M steps, lr=1e-4, B1=0.9, B2=0.999, warmup=10K
+  - 0.1 dropout, GELU Activation.
+  - <img src="https://user-images.githubusercontent.com/18374514/188924033-29df04ec-918a-4808-a7ec-cc243bfc6956.png" width="300">
