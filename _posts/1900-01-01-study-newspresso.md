@@ -134,6 +134,7 @@ Newspresso with TiME 모르는 단어 & 문장
   - = They may change <u>their terms and conditions</u> in a year's time <span style="color:red">where</span> actually uploaded, user-generated content is not important to them anymore.
 - to 부정사의 시제
   - he claims \[to have sent\] the first digital SMS over a satellite network in 1996.
+- <img src="https://user-images.githubusercontent.com/18374514/189181787-a61ea3a8-044d-43bc-97d2-bdab28223cfb.png" width=300>
 
 
 ### Vocab
