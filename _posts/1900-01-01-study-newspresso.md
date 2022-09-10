@@ -173,3 +173,11 @@ Newspresso with TiME 모르는 단어 & 문장
   - 어떤 주장이나 문제의 가장 중요하며 핵심이 되는 부분
 - for the masses(대중)
 - 
+
+## Vol 4 High-tech astrology apps claim to be more personalized than ever. Gen Z-ers are turning out to be believers.
+### Grammar
+
+### Vocab
+- <span style="color:red">claim to be</span> : ~ 라고 주장하는
+- <span style="color:red">chime in</span> : '차임벨', 종이 울리다, 시간을 알리다. 대화 중에 끼어들다.
+- 
