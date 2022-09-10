@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2022-07-25 00:00
+date: 2022-09-11 00:00
 created_date: 2022-04-07 00:00
 title: "[Study] Newspresso with TIME"
 author: oglee
