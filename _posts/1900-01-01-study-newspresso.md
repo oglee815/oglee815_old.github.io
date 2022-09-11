@@ -175,7 +175,9 @@ Newspresso with TiME 모르는 단어 & 문장
 - 
 
 ## Vol 4 High-tech astrology apps claim to be more personalized than ever. Gen Z-ers are turning out to be believers.
+
 ### Grammar
+- .
 
 ### Vocab
 - <span style="color:red">claim to be</span> : ~ 라고 주장하는
