@@ -182,4 +182,4 @@ Newspresso with TiME 모르는 단어 & 문장
 ### Vocab
 - <span style="color:red">claim to be</span> : ~ 라고 주장하는
 - <span style="color:red">chime in</span> : '차임벨', 종이 울리다, 시간을 알리다. 대화 중에 끼어들다.
-- 
+- <span style="color:red">get/be carried away(with) </span> : 마치 파도처럼 무엇을 휩쓸어 간다는 의미의 carry away를 비유적으로 표현함. 어떤 것에 과도하게 열중하거나 마음을 빼앗긴 나머지 자신의 감정에 압도되거나 자제력을 잃는다는 뜻으로 자주 사용.
