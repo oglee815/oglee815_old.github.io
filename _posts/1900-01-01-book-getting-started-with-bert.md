@@ -40,7 +40,7 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
   - 2) 그럼, vocab 이 11개가 되므로, 3개가 부족함. 3개를 더 추가해야함.
   - 3) 등장 횟수 순서로 보면, st와 me가 각각 4번씩 등장하므로, vocab에 추가함    
   - 4) 그 다음에, me와 n이 2번 등장하므로 men 도 추가
-    - <img src='https://user-images.githubusercontent.com/18374514/189704532-9be2b8c5-0474-43c9-b320-9d0787c115ea.png'width='300'>
+    - <img src='https://user-images.githubusercontent.com/18374514/189704532-9be2b8c5-0474-43c9-b320-9d0787c115ea.png' width='300'>
   - 5) 그럼 최종적으로 아래처럼 됨.
-    - <img src='https://user-images.githubusercontent.com/18374514/189704758-d891f635-5be4-43bf-99bc-67e65a18fbb6.png'width='300'>
+    - <img src='https://user-images.githubusercontent.com/18374514/189704758-d891f635-5be4-43bf-99bc-67e65a18fbb6.png' width='300'>
 
