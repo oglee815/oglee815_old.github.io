@@ -31,4 +31,16 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - <img src="https://user-images.githubusercontent.com/18374514/188924033-29df04ec-918a-4808-a7ec-cc243bfc6956.png" width="300">
 
 #### Byte Pair Encoding vs Byte-level byte pair encoding vs WordPiece
-- 
+- Byte-pair Encoding 
+  - 만약 우리 corpus에 다음과 같은 단어들이 있다고 가정하자, cost는 등장 횟수
+  - <img src='https://user-images.githubusercontent.com/18374514/189703095-f8f9d1de-4ebc-450c-a892-43e4919ebfd8.png' width='300'>
+  - 그리고 우리 vocab size를 14개로 정했다고 가정.
+  - 1) 모든 unique character를 vocab에 추가
+    - <img src='https://user-images.githubusercontent.com/18374514/189703595-eec2197d-0294-4d22-b2dc-3f49c675bb9f.png' width='300'>
+  - 2) 그럼, vocab 이 11개가 되므로, 3개가 부족함. 3개를 더 추가해야함.
+  - 3) 등장 횟수 순서로 보면, st와 me가 각각 4번씩 등장하므로, vocab에 추가함    
+  - 4) 그 다음에, me와 n이 2번 등장하므로 men 도 추가
+    - <img src='https://user-images.githubusercontent.com/18374514/189704532-9be2b8c5-0474-43c9-b320-9d0787c115ea.png'width='300'>
+  - 5) 그럼 최종적으로 아래처럼 됨.
+    - <img src='https://user-images.githubusercontent.com/18374514/189704758-d891f635-5be4-43bf-99bc-67e65a18fbb6.png'width='300'>
+
