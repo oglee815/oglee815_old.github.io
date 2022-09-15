@@ -62,4 +62,5 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
   - 위 그림에서 x7을 예측할 때, boundary의 시작과 끝인 R5와 R10만을 활용함.
   - 근데 X6나 x8 등을 예측할 때도 동일하게 R5와 R10을 활용하기 때문에, 어떤 토큰을 예측하는지에 대한 추가 정보가 필요함
   - 그래서 Positional Embedding 인 P를 활용함
-  - 
+  - 구체적으로는 아래와 같은 z_i를 활용해서 토큰을 prediction 함.
+    -  \( z_i = f(R_{s-1}, R_{e+1}, P_{i-s+1}) \), 여기서 f는 2 layer(GeLU) fnn.
