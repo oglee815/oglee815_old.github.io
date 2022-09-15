@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2022-09-08 00:00
+date: 2022-09-14 00:00
 created_date: 2022-09-08 00:00
 title: "[Book] Getting Started with Google BERT"
 author: oglee
@@ -17,20 +17,20 @@ tags:
 Getting Started with Google BERT by Sudharsan Ravichandiran
 <!--more-->
 
-#### Positional Encoding에 관한 설명
+### Positional Encoding에 관한 설명
 - pos = the position of the word in a sentence, i = the position of the embedding
 - ![image](https://user-images.githubusercontent.com/18374514/188919880-c7da1047-f3fa-48c6-b3e1-e98ff17624a0.png)
 - <img src="https://user-images.githubusercontent.com/18374514/188919806-0d726905-a441-489a-8c4e-867b8952b893.png" width="300">
 
-#### Whole word masking에서 주의할 점
+### Whole word masking에서 주의할 점
 - whole word를 마스킹하다가 만약 masking ratio가 15%를 넘어가게 되면 다른 토큰을 원복시킬 수도 있다.
 
-#### BERT의 pretraining 시 하이퍼파람
+### BERT의 pretraining 시 하이퍼파람
 - 배치 256, 100M steps, lr=1e-4, B1=0.9, B2=0.999, warmup=10K
 - 0.1 dropout, GELU Activation.
 - <img src="https://user-images.githubusercontent.com/18374514/188924033-29df04ec-918a-4808-a7ec-cc243bfc6956.png" width="300">
 
-#### Byte Pair Encoding vs Byte-level byte pair encoding vs WordPiece
+### Byte Pair Encoding vs Byte-level byte pair encoding vs WordPiece
 - Byte-pair Encoding 
   - 만약 우리 corpus에 다음과 같은 단어들이 있다고 가정하자, cost는 등장 횟수
   - <img src='https://user-images.githubusercontent.com/18374514/189703095-f8f9d1de-4ebc-450c-a892-43e4919ebfd8.png' width='300'>
@@ -52,4 +52,14 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - WordPiece
   - BPE와 기본적으로 비슷하나, frequency 기반으로 merge하지 않고 likelihood에 기반함
   - train set을 대상으로 language model를 우선 학습해서(통계적), maximum likelihood를 갖는 char 조합을 merge함.
-- 
+
+### RoBERTa가 BERT와 다른 점.
+- Dynamic Masking,  Removing NSP task, More Data Point(CC-News), large batch(256 -> 8K), Shorter training(1M -> 500K), BBPE as a tokenizer(50K vocab)
+
+### SpanBERT
+- Span boundary objective(SBO) 
+  - <img src='https://user-images.githubusercontent.com/18374514/190318897-6ae1775c-174f-4e4e-8826-eb351a9db1bb.png' width='500'>
+  - 위 그림에서 x7을 예측할 때, boundary의 시작과 끝인 R5와 R10만을 활용함.
+  - 근데 X6나 x8 등을 예측할 때도 동일하게 R5와 R10을 활용하기 때문에, 어떤 토큰을 예측하는지에 대한 추가 정보가 필요함
+  - 그래서 Positional Embedding 인 P를 활용함
+  - 
