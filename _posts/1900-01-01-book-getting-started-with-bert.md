@@ -69,4 +69,12 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 ### Softmax Temperature
 - Temperature에 따른 Softmax의 차이, T가 커질수록 smoothed 해짐
   - <img src='https://user-images.githubusercontent.com/18374514/190916755-458c4081-ea86-48c8-85d1-f046f685d864.png' width='500'>
-  - By increasing the value of T, we get a smoothed probability distribution, which gives more information about other classes
+  - By increasing the value of T, we get a smoothed probability distribution, which gives more information about other classes(이런걸 dark knowledge 라고 하는데.. 왜지?)
+
+### Dark Knowledge를 활용한 Knowledge distillation
+- First, we pre-train the teacher network with sotmax temperature to obtain dark knowledge. 
+- Then, Ttransfer this dark knowledge to the student. But How?
+  - <img src='https://user-images.githubusercontent.com/18374514/190917041-b2302832-2f50-4f2f-bc78-a46c3fbf531c.png' width='500'>
+  - Now, we compute the cross-entropy loss between the soft target and soft prediction and train the student network through backpropagation by minimizing the cross-entropy loss(<strong>AKA distillation loss</strong>)
+
+  
