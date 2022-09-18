@@ -76,5 +76,13 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - Then, Ttransfer this dark knowledge to the student. But How?
   - <img src='https://user-images.githubusercontent.com/18374514/190917041-b2302832-2f50-4f2f-bc78-a46c3fbf531c.png' width='500'>
   - Now, we compute the cross-entropy loss between the soft target and soft prediction and train the student network through backpropagation by minimizing the cross-entropy loss(<strong>AKA distillation loss</strong>)
-
-  
+  - Another, loss, **Student loss**
+- ![image](https://user-images.githubusercontent.com/18374514/190919383-9adf7838-0662-4b55-b56a-014418404499.png)
+  - CE with soft target (Distillation Loss)
+    - ![image](https://user-images.githubusercontent.com/18374514/190919399-5951bbc0-e760-4b3a-9a1d-c7c51ed7464c.png)
+  - CE with hard target(Student Loss), **argmax 있는게 다르다**
+    - ![image](https://user-images.githubusercontent.com/18374514/190919404-a4b76b01-77ca-4ab1-8529-5d287fafd255.png)
+    - (https://towardsdatascience.com/distilling-knowledge-in-neural-network-d8991faa2cdc)
+- DistilBERT is 60% faster and its size is 40% smaller compared dto large BERT
+- Apart from the distillation and student loss, we also compute **cosine embedding loss.**
+- It is basically **a distance measure between the representation learned by the teacher and student BERT.** Minimizing the cosine embedding loss makes the representation of the student more accurate and similar to the teacher's embedding.
