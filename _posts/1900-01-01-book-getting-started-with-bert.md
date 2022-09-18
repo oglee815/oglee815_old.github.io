@@ -64,3 +64,9 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
   - 그래서 Positional Embedding 인 P를 활용함
   - 구체적으로는 아래와 같은 z_i를 활용해서 토큰을 prediction 함.
     -  \\( z_i = f(R_{s-1}, R_{e+1}, P_{i-s+1}) \\), 여기서 f는 2 layer(GeLU) fnn.
+
+
+### Softmax Temperature
+- Temperature에 따른 Softmax의 차이, T가 커질수록 smoothed 해짐
+  - <img src='https://user-images.githubusercontent.com/18374514/190916755-458c4081-ea86-48c8-85d1-f046f685d864.png' width='500'>
+  - By increasing the value of T, we get a smoothed probability distribution, which gives more information about other classes
