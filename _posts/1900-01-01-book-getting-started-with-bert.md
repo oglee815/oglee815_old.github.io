@@ -86,3 +86,8 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - DistilBERT is 60% faster and its size is 40% smaller compared dto large BERT
 - Apart from the distillation and student loss, we also compute **cosine embedding loss.**
 - It is basically **a distance measure between the representation learned by the teacher and student BERT.** Minimizing the cosine embedding loss makes the representation of the student more accurate and similar to the teacher's embedding.
+
+### TinyBERT
+- Using Knowledge distillation.
+- Can we also transfer knowledge from the other layers of the teacher BERT? yes
+- 단순히 Teacher의 최종 Output 뿐만 아니라 Teacher의 각 레이어의 output도 transfer 가능하다.
