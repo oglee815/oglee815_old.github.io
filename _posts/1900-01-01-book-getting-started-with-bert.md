@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2022-09-14 00:00
+date: 2022-09-22 00:00
 created_date: 2022-09-08 00:00
 title: "[Book] Getting Started with Google BERT"
 author: oglee
@@ -95,3 +95,4 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - TinyBERT, we use a **two-stage learning framework** where we apply distillation in both the pre-training and fine-tuning stage
 - TinyBERT, 4 encoder alyers, 312 hidden dimenstion, 14.5M parameters.
 - TeacherBERT의Hidden Dim을 TinyBERT에 전이하기 위해서, Loss = MSE(H_teacher, H_student) 이런식으로 해야하는데, 두 모델의 Dimension이 다르므로, Linear 변환을 위한 W를 H_teacher에 곱해준다. Embedding도 마찬가지. W는 당연히 학습됨.
+- Predciont Output은 L_pred = -softmax(Z_t) * log_softmax(Z_s) 로 학습됨. Z는 각 모델의 output logit
