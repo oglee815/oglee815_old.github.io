@@ -91,3 +91,7 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - Using Knowledge distillation.
 - Can we also transfer knowledge from the other layers of the teacher BERT? yes
 - 단순히 Teacher의 최종 Output 뿐만 아니라 Teacher의 각 레이어의 output도 transfer 가능하다.
+  - (1) Logits produced by the prediction(output) layer, (2) hidden state and attention matrix produced by the teacher BERT, (3) Output of the embedding layer 
+- TinyBERT, we use a **two-stage learning framework** where we apply distillation in both the pre-training and fine-tuning stage
+- TinyBERT, 4 encoder alyers, 312 hidden dimenstion, 14.5M parameters.
+- TeacherBERT의Hidden Dim을 TinyBERT에 전이하기 위해서, Loss = MSE(H_teacher, H_student) 이런식으로 해야하는데, 두 모델의 Dimension이 다르므로, Linear 변환을 위한 W를 H_teacher에 곱해준다. Embedding도 마찬가지. W는 당연히 학습됨.
