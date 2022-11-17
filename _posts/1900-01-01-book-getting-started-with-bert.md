@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2022-09-22 00:00
+date: 2022-11-17 00:00
 created_date: 2022-09-08 00:00
 title: "[Book] Getting Started with Google BERT"
 author: oglee
@@ -77,7 +77,7 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - Then, Ttransfer this dark knowledge to the student. But How?
   - <img src='https://user-images.githubusercontent.com/18374514/190917041-b2302832-2f50-4f2f-bc78-a46c3fbf531c.png' width='500'>
   - Now, we compute the cross-entropy loss between the soft target and soft prediction and train the student network through backpropagation by minimizing the cross-entropy loss(<strong>AKA distillation loss</strong>)
-    -  Hard Label이 아닌 Soft Label로 Cross Entropy 계산(![설명]https://ratsgo.github.io/insight-notes/docs/interpretable/smoothing)
+    -  Hard Label이 아닌 Soft Label로 Cross Entropy 계산 [Soft-Cross-Entropy 설명](https://ratsgo.github.io/insight-notes/docs/interpretable/smoothing)
   - Another, loss, **Student loss**
 - ![image](https://user-images.githubusercontent.com/18374514/190919383-9adf7838-0662-4b55-b56a-014418404499.png)
   - CE with soft target (Distillation Loss)
@@ -90,6 +90,7 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - It is basically **a distance measure between the representation learned by the teacher and student BERT.** Minimizing the cosine embedding loss makes the representation of the student more accurate and similar to the teacher's embedding.
 
 ### TinyBERT
+- 요약하면, 모든 레이어에 대해 pre-training, fine-tuning 시에 distllation 진행하고, Data Augmentation도 진행
 - Using Knowledge distillation.
 - Can we also transfer knowledge from the other layers of the teacher BERT? yes
 - 단순히 Teacher의 최종 Output 뿐만 아니라 Teacher의 각 레이어의 output도 transfer 가능하다.
@@ -97,4 +98,15 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - TinyBERT, we use a **two-stage learning framework** where we apply distillation in both the pre-training and fine-tuning stage
 - TinyBERT, 4 encoder alyers, 312 hidden dimenstion, 14.5M parameters.
 - TeacherBERT의Hidden Dim을 TinyBERT에 전이하기 위해서, Loss = MSE(H_teacher, H_student) 이런식으로 해야하는데, 두 모델의 Dimension이 다르므로, Linear 변환을 위한 W를 H_teacher에 곱해준다. Embedding도 마찬가지. W는 당연히 학습됨.
-- Predciont Output은 L_pred = -softmax(Z_t) * log_softmax(Z_s) 로 학습됨. Z는 각 모델의 output logit
+- Prediction Layer distilation by minimizing the cross-entropy loss between the soft arget and soft prediction.
+  - L_pred = -softmax(Z_t) * log_softmax(Z_s) 로 학습됨. Z는 각 모델의 output logit
+- Final Loss, summation of belows
+  - <img src='https://user-images.githubusercontent.com/18374514/202441554-189ad2c0-3deb-4133-ba40-4bc3a0b7189b.png' width='300'>
+- In TinyBERT, two-stage learning
+  - 1) General distilation : Pretraining step. 
+  - 2) Task-specific distillation : Fine-tuned BERT로 distillation.
+#### Data Augmentation in TinyBERT
+- Distillation시에 데이터가 많이 필요하기 때문에 DA가 필수인듯?
+- 1) Single-piece word 만 Mask 한 뒤, K개의 Prediction candidates를 뽑음(BERT 사용)
+- 2) Sinilge-Piece가 아니면 마스크 하지 않음. 대신 glove embedding으로 가장 유사한 단어를 찾아서 candidate로 만듦
+- 3) 그 다음, 일정 Threshold(예를 들어 0.4) 기준으로 단어를 candidates으로 교체하거나 그대로 둠.
