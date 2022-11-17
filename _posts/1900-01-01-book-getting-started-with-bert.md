@@ -67,6 +67,7 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 
 
 ### Softmax Temperature
+- ![image](https://user-images.githubusercontent.com/18374514/202433204-1d4a003b-0354-4e2b-9b0e-4f8777cc9f59.png)
 - Temperature에 따른 Softmax의 차이, T가 커질수록 smoothed 해짐
   - <img src='https://user-images.githubusercontent.com/18374514/190916755-458c4081-ea86-48c8-85d1-f046f685d864.png' width='500'>
   - By increasing the value of T, we get a smoothed probability distribution, which gives more information about other classes(이런걸 dark knowledge 라고 하는데.. 왜지?)
