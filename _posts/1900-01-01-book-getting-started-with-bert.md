@@ -77,6 +77,7 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - Then, Ttransfer this dark knowledge to the student. But How?
   - <img src='https://user-images.githubusercontent.com/18374514/190917041-b2302832-2f50-4f2f-bc78-a46c3fbf531c.png' width='500'>
   - Now, we compute the cross-entropy loss between the soft target and soft prediction and train the student network through backpropagation by minimizing the cross-entropy loss(<strong>AKA distillation loss</strong>)
+    -  Hard Label이 아닌 Soft Label로 Cross Entropy 계산(![설명]https://ratsgo.github.io/insight-notes/docs/interpretable/smoothing)
   - Another, loss, **Student loss**
 - ![image](https://user-images.githubusercontent.com/18374514/190919383-9adf7838-0662-4b55-b56a-014418404499.png)
   - CE with soft target (Distillation Loss)
