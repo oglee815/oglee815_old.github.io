@@ -110,3 +110,17 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - 1) Single-piece word 만 Mask 한 뒤, K개의 Prediction candidates를 뽑음(BERT 사용)
 - 2) Sinilge-Piece가 아니면 마스크 하지 않음. 대신 glove embedding으로 가장 유사한 단어를 찾아서 candidate로 만듦
 - 3) 그 다음, 일정 Threshold(예를 들어 0.4) 기준으로 단어를 candidates으로 교체하거나 그대로 둠.
+
+#### BERTSUM 에서 놓치면 안되는것.
+- Extractive Summarization의 경우, 모든 Sentence 앞에 \[CLS\] 토큰을 입력
+- Segment EMbedding의 경우에는 Interval 하게 $E_A$, $E_B$, $E_A$ 이런식으로 번갈아서 주면 된다
+- Position Embedding 은 동일
+
+##### BERTSUM with an inter-sentence transformer
+- BERT의 Sentence Output에 2-layer Transformer를 얹음. Positional Embedding만 적용
+- LSTM도 얹는게 가능. 
+- LR= 2 $e^{-3}$ * min( $step^{-0.5}$, $step * warmup^{-1.5}$), warmup=10000
+
+#### Abstracitve summarization using BERT
+- Decoder는 Random init 이기 때문에 Encoder랑 다른 LR, Optimizer를 가져감
+- Encoder보다 Decoder가 훨씬 LR이 큼. 동일한 LR을 사용하면 Encoder는 overfit, Decoder는 Underfit 될 확률이 있음.
