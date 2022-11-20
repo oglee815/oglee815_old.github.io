@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2022-11-17 00:00
+date: 2022-11-20 00:00
 created_date: 2022-09-08 00:00
 title: "[Book] Getting Started with Google BERT"
 author: oglee
@@ -124,3 +124,91 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 #### Abstracitve summarization using BERT
 - Decoder는 Random init 이기 때문에 Encoder랑 다른 LR, Optimizer를 가져감
 - Encoder보다 Decoder가 훨씬 LR이 큼. 동일한 LR을 사용하면 Encoder는 overfit, Decoder는 Underfit 될 확률이 있음.
+
+#### ROUGE Metric
+- Recall-Oriented Understudy(대역) for Gisting(요점 추리기) Evaluation
+- Recall = $Total number of overlapping n-grams\over Total number of n-grams in the reference summary$
+- ROUGE-1 : a unigram recall
+  - Candidate Summary : Machine learning is seen as a subset of artificial intelligence.
+    - unigrams : manchine, learning, is, seen, as, a, subset, of, artificial, intelligence
+  - Reference summary : Machine learning is a subset of artificial intelligence.
+    - unigrams : machine, learning, is, a, subset, of, artificial, intelligence
+  - Recall = 8/8 = 1
+- ROUGE-2 : a bigram recall
+  - candidate summary bigrams : (mchine learning), (learning is), (is seen), (seen as), (as a), (a subset), (subset of), (of artifical), (artificial intelligence)
+  - reference summary bigrams : (machine learning), (learning is), (is a), (a subset), (subset of), (of artifical), (artificial intelligence)
+  - recall = 6/7 = 0.85
+- **ROUGE-L** : the longest common subsequence(LCS), ROUGE-L is calculated using the **F-measure.**
+  - $R_{lcs}$ = LCS(candidate, reference)/Total number of words in the reference summary.
+  - $P_{lcs}$ = LCS(candidate, reference)/Total number of words in the candidate summary.
+  - $F_{lcs}$ = $(1+b^2)R_{lcs}P_{lcs} \over R_{lcs} + b^2P_{lcs}$, b is used for controlling the importance of precision and recall.
+
+### Applying BERT to Other Languages
+- NLI 데이터셋 종류: SNLI(Stanford Natural Language Inference), MLNI(Multi-Genre natural Language Inference), XNLI(Cross-lingual NLI)
+  - XLNI는 MNLI파생이기 때문에 겹치는게 있다(영어)
+#### How multilingual is multilingual BERT?
+- **Effect of Vocabulary Overlap**
+  - 만약 Vocab이 겹치는게 많다면, Vocab 이 많이 겹치는 언어로의 Zero-shot Transfer 성능이 좋아야 한다.
+  - <img src='https://user-images.githubusercontent.com/18374514/202898656-6c30dea3-14b0-43f3-aae0-96055a4cc8aa.png', width='500'>
+  - 위 결과를 보면 그렇지는 않았다. 그러므로, 단순히 memorizaing vocabulary 하는 건 아니다.
+- **Generalizatoin across scripts(글씨체)**
+  - Urdu와 Hindi는 각각  서로 다른 scripts를 갖는다. 그러나 Urdu언어로 된 POS Task에 fine-tuned 된 모델은 Hindi에도 잘 동학한다.
+  - This indicates that M-BERT has mapped the Urdu annotations to the Hidi words.
+  - Scripts 가 달라도 동작하는건 신기. 근데 English-Japanese 사이에서는 동작하지 않았음. 그러니까 Typological similarity가 전혀 없는 영어-일본어 등은 동작하지 않는 것으로 봐서 Sripts 가 달라도 동작하는 것은 Typological similarity 때문으로 파악됨
+- **Generalization across typological features.
+  - Bulgarian과 영어는 동일한 Word order를 갖는다(주어 동사 목적어 등). 따라서 완전히 다른 일본어보다 Bulgarian에서 POS Task에서 영어로 학습한 모델의 zero-shot 성능이 더 좋게 나왔다.
+- **Effect of language similarity**
+  - <img src='https://user-images.githubusercontent.com/18374514/202899049-9d7a6ccb-f300-4966-bb93-d41a166c788e.png' width='500'>
+  - WALS : world atlas of language structures, 언어간 특성 파악 database
+  - 즉, 언어학적으로 유사한 언어들끼리의 Transfer 성능이 잘 나옴.
+- **Effect of code switching and transliteration**
+  - Code Switching? 서로 다른 언어를 Mixing 한것. "Hi, 나는 현제야"
+  - Transliteration? 발음 그대로 언어를 옮긴 것. "하이, 아이엠 현제야"
+  - 이 부분 설명이 부실해서, 명확히 이해를 못했으나, 어쨌든 Code-Swiching은 가능하나 Transliteration은 Transfer learning이 잘 안된다.
+ 
+#### The cross-lingual language model(cross-lingual objective)
+- The XLM(cross-lingual language model) is pre-trained using the monolingual and parallel datasets.
+- Parallel datasets : MultiUN, OPUS, IIT Bombay corpus.
+- XLM uses byte pair encoding
+
+##### Pretraining strategies
+- Causal Language modeling(CLM) : $P(w_t|w_1,w_2,...,w_{t-1};\theta)$
+- MLM : BERT의 MLM과 다른 점은 Sentence Pair로 입력하지 않는 것, 그리고 token length 256. 자주 등장하는 token과 rare token의 밸런스를 맞추기 위해 squre root of inverse frequency를 이용
+- TLM: Source-Target 언어를 함께 넣고 MLM
+- XLM : MLM+TLM
+- XLM-R : MLM Only
+
+#### Sentence-BERT with triplet loss
+- <img src='https://user-images.githubusercontent.com/18374514/202901601-e41f4cf1-1c44-43c4-abbb-7b7392adea64.png' width='500'>
+- 입실론은 margin을 의미, 이것은 positive sentence가 최소한 입실론 만큼은 negative보다 가까워지게 만들어줌. **논문에서는 1로 셋팅**
+- loss function이니까 max(.,0) 해서 음수로는 안되게하고.. metric은 euclidean으로 함
+
+#### Learning language and video representations with VideoBERT
+- <img src='https://user-images.githubusercontent.com/18374514/202905359-e9ac7348-37c8-4b63-bf84-afdeec483f06.png' width='500'>
+  - 위와 같은 비디오에서 representation을 배우는 법
+  - ASR로 Language Token은 구함
+  - 비디오에서 1.5초동안 20fps의 이미지를 샘플링하여 Image token을 구함
+  - 이 둘을 Concat, random mask, add special token, then
+  - <img src='https://user-images.githubusercontent.com/18374514/202905467-fde19cdd-57a6-48ac-98b8-c5680594f8fe.png' width='500'>
+  - <img src='https://user-images.githubusercontent.com/18374514/202905592-78e9ea77-0973-4aab-8a06-20c21bd3937e.png' width='500'>
+  - 그리고 아래 그림처럼, **이미지와 텍스트가 Align 되는지도 학습함**
+  - <img src='https://user-images.githubusercontent.com/18374514/202905743-d26dd069-5d5f-4df0-8547-40529975660c.png' width='500'>
+- The final pre-training objectives
+  - 1) Text-only : just MLM
+  - 2) Video-only : visual token으로 MLM
+  - 3) text-video : image token과 language token을 모두 MLM, Align Task도 수행( 같이 한다는건가?)
+  - The final -pretraining objective of VideoBERT is the weighted combination of all of the three methods.
+  - 2days using 4 TPUs for 0.5M iterations.
+- Dataset
+  - 유투브에서 요리 instruction과 관련된 동영상 모음. 312,000 개의 23,186 hours or 966 days
+  - 텍스트는 Youtube API 활용
+  - 자막이 안달리는 영상은 Video-Only objective에 활용하고, 나머지는 다 사용.
+- Application
+  - <img src='https://user-images.githubusercontent.com/18374514/202906114-ad70c991-b219-431d-88ab-7a0b60ecb54c.png' width='500'>
+
+#### Understanding BART
+- Text Infiling과 SpanBERT와 다른점
+  - 일정 Span Tokens을 MASK로 치환하는건 동일하나, 예를 들어 3개의 토큰을 치환하더라도 BART에서는 하나의 [MASK]로 변경 하고, SpanBERT는 3개로 변경
+  - 근데 코드로 구현하면, Text Infiling에서 몇개의 토큰으로 변경할지는 어떻게 구현하지?
+
+
