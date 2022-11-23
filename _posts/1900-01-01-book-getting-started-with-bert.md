@@ -113,13 +113,13 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 
 #### BERTSUM 에서 놓치면 안되는것.
 - Extractive Summarization의 경우, 모든 Sentence 앞에 \[CLS\] 토큰을 입력
-- Segment EMbedding의 경우에는 Interval 하게 $E_A$, $E_B$, $E_A$ 이런식으로 번갈아서 주면 된다
+- Segment EMbedding의 경우에는 Interval 하게 $$E_A$$, $$E_B$$, $$E_A$$ 이런식으로 번갈아서 주면 된다
 - Position Embedding 은 동일
 
 ##### BERTSUM with an inter-sentence transformer
 - BERT의 Sentence Output에 2-layer Transformer를 얹음. Positional Embedding만 적용
 - LSTM도 얹는게 가능. 
-- LR= 2 $e^{-3}$ * min( $step^{-0.5}$, $step * warmup^{-1.5}$), warmup=10000
+- LR= 2 $$e^{-3}$$ * min( $$step^{-0.5}$$, $$step * warmup^{-1.5}$$), warmup=10000
 
 #### Abstracitve summarization using BERT
 - Decoder는 Random init 이기 때문에 Encoder랑 다른 LR, Optimizer를 가져감
@@ -127,7 +127,7 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 
 #### ROUGE Metric
 - Recall-Oriented Understudy(대역) for Gisting(요점 추리기) Evaluation
-- Recall = $Total number of overlapping n-grams\over Total number of n-grams in the reference summary$
+- Recall = $$Total number of overlapping n-grams\over Total number of n-grams in the reference summary$$
 - ROUGE-1 : a unigram recall
   - Candidate Summary : Machine learning is seen as a subset of artificial intelligence.
     - unigrams : manchine, learning, is, seen, as, a, subset, of, artificial, intelligence
@@ -139,9 +139,9 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
   - reference summary bigrams : (machine learning), (learning is), (is a), (a subset), (subset of), (of artifical), (artificial intelligence)
   - recall = 6/7 = 0.85
 - **ROUGE-L** : the longest common subsequence(LCS), ROUGE-L is calculated using the **F-measure.**
-  - $R_{lcs}$ = LCS(candidate, reference)/Total number of words in the reference summary.
-  - $P_{lcs}$ = LCS(candidate, reference)/Total number of words in the candidate summary.
-  - $F_{lcs}$ = $(1+b^2)R_{lcs}P_{lcs} \over R_{lcs} + b^2P_{lcs}$, b is used for controlling the importance of precision and recall.
+  - $$R_{lcs}$$ = LCS(candidate, reference)/Total number of words in the reference summary.
+  - $$P_{lcs}$$ = LCS(candidate, reference)/Total number of words in the candidate summary.
+  - $$F_{lcs}$$ = $$(1+b^2)R_{lcs}P_{lcs} \over R_{lcs} + b^2P_{lcs}$$, b is used for controlling the importance of precision and recall.
 
 ### Applying BERT to Other Languages
 - NLI 데이터셋 종류: SNLI(Stanford Natural Language Inference), MLNI(Multi-Genre natural Language Inference), XNLI(Cross-lingual NLI)
@@ -172,7 +172,7 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - XLM uses byte pair encoding
 
 ##### Pretraining strategies
-- Causal Language modeling(CLM) : $P(w_t|w_1,w_2,...,w_{t-1};\theta)$
+- Causal Language modeling(CLM) : $$P(w_t|w_1,w_2,...,w_{t-1};\theta)$$
 - MLM : BERT의 MLM과 다른 점은 Sentence Pair로 입력하지 않는 것, 그리고 token length 256. 자주 등장하는 token과 rare token의 밸런스를 맞추기 위해 squre root of inverse frequency를 이용
 - TLM: Source-Target 언어를 함께 넣고 MLM
 - XLM : MLM+TLM
@@ -211,4 +211,5 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
   - 일정 Span Tokens을 MASK로 치환하는건 동일하나, 예를 들어 3개의 토큰을 치환하더라도 BART에서는 하나의 [MASK]로 변경 하고, SpanBERT는 3개로 변경
   - 근데 코드로 구현하면, Text Infiling에서 몇개의 토큰으로 변경할지는 어떻게 구현하지?
 
-
+# Edit
+- https://github.com/oglee815/oglee815.github.io/edit/master/_posts/1900-01-01-book-getting-started-with-bert.md
