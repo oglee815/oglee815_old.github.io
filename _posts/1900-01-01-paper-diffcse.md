@@ -94,7 +94,7 @@ _We propose **DiffCSE, an unsupervised contrastive learning framework** for lear
 ## Ablation Task
 **1) Removing CL**
   -  CL 없이 RTD만 하게 되면, STS-B 점수는 30%가 떨어지지만 Transfer Task는 오직 2%만 하락. 
-  - This result shows that it is important to have insensitive and sensitive attributes that **exist together in the representation space.** `무슨 말인지? 표현 공간 상에 함께 존재한다? 분리되어 각각 존재한다는 표현이 더 맞는거 아닌가?`
+  - This result shows that it is important to have insensitive and sensitive attributes that **exist together in the representation space.**
 
 **2) Next Sentence vs Same Sentence**
   - ELECTRA에는 Same Sentence가 아니라 Next Sentence를 넣음(이러면 Diff operation은 사라짐)
