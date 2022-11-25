@@ -58,3 +58,10 @@ distilroberta = torch.quantization.quantize_dynamic(
   - A few selected tokens or a few injected tokens are used as global attention that can attend to all other positions and be attended by them.
   - Hense, the maximum path distance between any **two token positions is equal to 2.**
   - `그니까 최소한 맨 앞에 있는 CLS Token은 모든 token과 direct conntect가 가능하도록 설계된거네. SequenceClassification은 이것만으로도 잘될수도 있겠다. 그런데 Token Classification은?`
+  - By the way, these global tokens don't have to be at the beginning of the sentence either. For example, the **longformer model randomly selects global tokens in addition to the first two tokens.**
+  - ![image](https://user-images.githubusercontent.com/18374514/203927779-97c0e2d7-b4cc-42d8-9306-23e9e4c66cb6.png)
+  - Blockwise Pattern, it chunkes the otkens into a fixed number of blocks, which is especially usueful for long-context-problems. For example, when a 4096 x 4096 attention matrix is chunked using a block size of 512, then 8 (512x512) query blocks and key blocks are formed.
+  - Many efficient models such as BigBird and Reformer mostly chunk tokens into blocks to reduce the complexity.
+- It is import to note that proposed patters must be supprted by **the accelerators and the libraries**. 
+- Some attention patterns such as dilated patterns require a special matrix multiplication that is not directly supported in current deep learning libraries such as PyTorch or TensorFlow as of writing this chapter.
+- Longformer uses a combination of a sliding window and global attention.
