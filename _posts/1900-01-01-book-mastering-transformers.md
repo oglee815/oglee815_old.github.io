@@ -47,3 +47,14 @@ distilroberta = torch.quantization.quantize_dynamic(
     dtye=torch.qint8
     )
 ```
+### Sparse attention with fixed patterns
+- ![image](https://user-images.githubusercontent.com/18374514/203922841-faa7f1c5-8fc6-4075-bdfa-2443a4f0b58f.png)
+- In sparse mode, the information is **transmitted through connected nodes(non-empty cells)** in the model.
+  - For example, the output position 7 of the sparse attention matrix cannot directly attend to the input position 3, since the cell(7,3) is seen as empty.
+  - However, position 7 indirectly attends to position 3 via the token position 5, that is (7->5, 5->3, 즉, 7->3이 가능)
+  - the full self-attention incurs n^2 numbers of active cells, the sparse model does roughly **5xn**.
+- Global Attention
+  - ![image](https://user-images.githubusercontent.com/18374514/203923854-044f8d66-f0a8-4fd0-8acd-586cb9a22777.png)
+  - A few selected tokens or a few injected tokens are used as global attention that can attend to all other positions and be attended by them.
+  - Hense, the maximum path distance between any **two token positions is equal to 2.**
+  - `그니까 최소한 맨 앞에 있는 CLS Token은 모든 token과 direct conntect가 가능하도록 설계된거네. SequenceClassification은 이것만으로도 잘될수도 있겠다. 그런데 Token Classification은?`
