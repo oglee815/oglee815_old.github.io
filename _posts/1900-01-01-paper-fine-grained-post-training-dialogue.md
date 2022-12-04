@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-03-02 14:00
-created_date: 2022-03-02 14:00
+date: 2022-12-04 14:00
+created_date: 2022-12-04 14:00
 title: "[Paper] 20?21? Fine-grained Post-training for Improving Retrieval-based Dialogue
 "
 author: Janghoon Han, Taesuk Hong, Byoungjae Kim, Youngjoong Ko, Jungyun Seo @ 서강대, 성균관대, LG AI research
