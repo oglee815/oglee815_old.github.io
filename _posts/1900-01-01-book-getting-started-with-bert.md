@@ -20,7 +20,7 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 # Test
 - LR= 2 $$e^{-3}$$ * min( $$step^{-0.5}$$, $$step * warmup^{-1.5}$$), warmup=10000
 - LR= 2 $e^{-3}$
-- 
+
 ### Positional Encoding에 관한 설명
 - pos = the position of the word in a sentence, i = the position of the embedding
 - ![image](https://user-images.githubusercontent.com/18374514/188919880-c7da1047-f3fa-48c6-b3e1-e98ff17624a0.png)
@@ -176,7 +176,7 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 - XLM uses byte pair encoding
 
 ##### Pretraining strategies
-- Causal Language modeling(CLM) : $$P(w_t|w_1,w_2,...,w_{t-1};\theta)$$
+- Causal Language modeling(CLM) : $$P(w_t\|w_1,w_2,...,w_{t-1};\theta)$$
 - MLM : BERT의 MLM과 다른 점은 Sentence Pair로 입력하지 않는 것, 그리고 token length 256. 자주 등장하는 token과 rare token의 밸런스를 맞추기 위해 squre root of inverse frequency를 이용
 - TLM: Source-Target 언어를 함께 넣고 MLM
 - XLM : MLM+TLM
