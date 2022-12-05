@@ -19,10 +19,8 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
 
 # Test
 - LR= 2 $$e^{-3}$$ * min( $$step^{-0.5}$$, $$step * warmup^{-1.5}$$), warmup=10000
-- - LR= 2 $e^{-3}$
-
-
-
+- LR= 2 $e^{-3}$
+- 
 ### Positional Encoding에 관한 설명
 - pos = the position of the word in a sentence, i = the position of the embedding
 - ![image](https://user-images.githubusercontent.com/18374514/188919880-c7da1047-f3fa-48c6-b3e1-e98ff17624a0.png)
