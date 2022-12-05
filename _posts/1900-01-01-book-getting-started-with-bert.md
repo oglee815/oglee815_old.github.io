@@ -6,7 +6,7 @@ title: "[Book] Getting Started with Google BERT"
 author: oglee
 description: "Getting Started with Google BERT"
 comments: true
-math: true
+mathjax: true
 category:
 - book
 tags:
