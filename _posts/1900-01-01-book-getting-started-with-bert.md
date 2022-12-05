@@ -2,9 +2,9 @@
 layout: post
 date: 2022-11-20 00:00
 created_date: 2022-09-08 00:00
-title: "[Book] Getting Started with Google BERT"
+title: "[Book] Getting Started with Google BERT2"
 author: oglee
-description: "Getting Started with Google BERT2"
+description: "Getting Started with Google BERT"
 comments: true
 mathjax: true
 category:
