@@ -6,7 +6,7 @@ title: "[Book] Mastering Transformers"
 author: Savas Yildirim
 description: "Mastering Transformers"
 comments: true
-math: true
+mathjax: true
 category:
 - book
 tags:
@@ -60,8 +60,32 @@ distilroberta = torch.quantization.quantize_dynamic(
   - `그니까 최소한 맨 앞에 있는 CLS Token은 모든 token과 direct conntect가 가능하도록 설계된거네. SequenceClassification은 이것만으로도 잘될수도 있겠다. 그런데 Token Classification은?`
   - By the way, these global tokens don't have to be at the beginning of the sentence either. For example, the **longformer model randomly selects global tokens in addition to the first two tokens.**
   - ![image](https://user-images.githubusercontent.com/18374514/203927779-97c0e2d7-b4cc-42d8-9306-23e9e4c66cb6.png)
-  - Blockwise Pattern, it chunkes the otkens into a fixed number of blocks, which is especially usueful for long-context-problems. For example, when a 4096 x 4096 attention matrix is chunked using a block size of 512, then 8 (512x512) query blocks and key blocks are formed.
-  - Many efficient models such as BigBird and Reformer mostly chunk tokens into blocks to reduce the complexity.
+  - Blockwise Pattern, it chunkes the tokens into a fixed number of blocks, which is especially usueful for long-context-problems. For example, when a 4096 x 4096 attention matrix is chunked using a block size of 512, then 8 (512x512) query blocks and key blocks are formed.
+  - Many efficient models such as **BigBird and Reformer mostly chunk tokens into blocks to reduce the complexity.**
 - It is import to note that proposed patters must be supprted by **the accelerators and the libraries**. 
 - Some attention patterns such as dilated patterns require a special matrix multiplication that is not directly supported in current deep learning libraries such as PyTorch or TensorFlow as of writing this chapter.
 - Longformer uses a combination of a sliding window and global attention.
+
+### Learnable patterns
+- Learning-based patterns are the alternatives to fixed (predefined) patterns. 
+- These approaches extract the patterns in an unsupervised data-driven fashion.
+- They leverage some techniques to measure the **similarity between the queries and the keys to properly cluster them**
+- This transformer family learns first **how to cluster the tokens** and then **restrict the interaction to get an optimum view of the attention matrix.**
+- **Reformer**, as one of the important efficient models based on learnable patterns.
+  - It employs **Local Self Attention (LSA) that cuts the input into N chnunks to reduce the complexity bottleneck.**
+  - The most important contribution of Reformer is to leverage the **Locality Sensitive Hashing (LSH) function**, which **assignes the same value to similar query vectors**. Attention could be approximated by only **comparing the most similar vectors**, which helps us reduce the dimensionality and then sparsify the matrix. It is a safe operation since the softmax function is highly dominated by large values and can ignore dissimilar vectors. Additionally, insted of finding the relevant keys to a given query, only similar queries are found and bucked. That is, the position of a query can only attend to the positions of other queries to which it has a high cosine similarity.
+  - To reduce the memory footprint, Reformer uses **reversible residual layers**, which **avoids the need to store the activations of all the layers to be reused for backpropagation**, following **Reversible Residual Network(RevNet)**, becuase the activations of any layer can be recovered from the activation of the following layer.
+- It is important to note that Reformer model and many other efficient transformers are criticized as, in practice, **they are only more efficient than the vanilla transformer when the input length is very long**(Ref:Efficient Transformers:A Survey).
+
+### Low-rank factorication, kernel methods, and other approaches
+- The latest trend of the efficient model is to leverage low-rank approximations of the full self-attention matrix. 
+  - These models are considered to be the lightest since they can reduce the self-attention complexity O(n2) to O(n) in both computational time and memory footprint. 
+  - Choosing a very small projection dimension k, such that k << n, then the memory and space complexity is highly reduced. 
+  - **Linformer and Synthesizer** are the models that efficiently approximate the full attention with a low-rank factorization. The decompose the dot-product **NxN attention of the original transformer through linear projections.**
+- Kernel attention
+  - **A kernel is a function that takes two vectors as arguments and returns the product of their projection with a feature map.**
+  - It enables us to operate in high-dimensional feature space without even computing the coordinate of the data in that high-dimensional space, because computations within that space become more expensive. **This is when the kernel trick comes into play.**
+  - The efficient models based on kernelization enables us to **re-write the self-attention mechanism to avoid explicitly computing the NxN matrix**.
+  - **SVM하고 비슷한듯**
+  - **Performer** and **Linear Transformers**
+- 
