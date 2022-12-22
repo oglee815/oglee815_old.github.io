@@ -88,4 +88,13 @@ distilroberta = torch.quantization.quantize_dynamic(
   - The efficient models based on kernelization enables us to **re-write the self-attention mechanism to avoid explicitly computing the NxN matrix**.
   - **SVM하고 비슷한듯**
   - **Performer** and **Linear Transformers**
-- 
+
+### Fundamental limitations of multilingual models
+- **curse of multilingualism**
+  - degrades performance --> **due to shared vocabulary**
+  - Compared to monolingual models, multilingual models are significantly more limited in terms of the **parameter budget.**
+  - They need to allocate their vocabulary to each one of more than 100 languages. 
+- Capability of the **designated tokenizer.**
+  - "How good is your tokenizer? on the monolingual performance of multilingual language models(2021)" showed that when a **dedicated language-specific tokenizer** rather than a general-purpose one (shared multilingual tokenizer) is attatched to multilingual model, it improves the performance for that language
+- **imbalance in resource dstribution**
+- **knowledge transfer** between two languages can be more efficient **if those languages are close.**
