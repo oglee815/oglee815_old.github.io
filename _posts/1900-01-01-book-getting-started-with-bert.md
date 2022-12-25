@@ -17,10 +17,6 @@ tags:
 Getting Started with Google BERT by Sudharsan Ravichandiran
 <!--more-->
 
-# Test
-- LR= 2 $$e^{-3}$$ * min( $$step^{-0.5}$$, $$step * warmup^{-1.5}$$), warmup=10000
-- LR= 2 $e^{-3}$
-
 ### Positional Encoding에 관한 설명
 - pos = the position of the word in a sentence, i = the position of the embedding
 - ![image](https://user-images.githubusercontent.com/18374514/188919880-c7da1047-f3fa-48c6-b3e1-e98ff17624a0.png)
@@ -68,7 +64,6 @@ Getting Started with Google BERT by Sudharsan Ravichandiran
   - 그래서 Positional Embedding 인 P를 활용함
   - 구체적으로는 아래와 같은 z_i를 활용해서 토큰을 prediction 함.
     -  \\( z_i = f(R_{s-1}, R_{e+1}, P_{i-s+1}) \\), 여기서 f는 2 layer(GeLU) fnn.
-
 
 ### Softmax Temperature
 - <img src='https://user-images.githubusercontent.com/18374514/202433204-1d4a003b-0354-4e2b-9b0e-4f8777cc9f59.png' width='300'>
