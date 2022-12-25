@@ -321,8 +321,8 @@ ul.social-icons {
   li {
 
     // position: relative;
-    margin: 40px 0 0;
-    padding: 40px 40px 40px;
+    margin: 20px 0 0;
+    padding: 20px 20px 20px;
     border: 1px solid #eee;
     background: #fff;
     box-shadow: 0 2px 3px rgba(0,0,0,0.05);
@@ -337,12 +337,13 @@ ul.social-icons {
       @include relative-font-size(1.4);
 
       @media screen and (min-width: $on-large) {
-        @include relative-font-size(1.5);
+        @include relative-font-size(1.2);
       }
     }
 
     .post-excerpt {
-      margin-top: $spacing-unit / 2;
+      // margin-top: $spacing-unit / 2;
+      margin-top: 0;
 
       p {
         margin-bottom: 0;
