@@ -1,9 +1,14 @@
 // Fonts
-$sans-serif: 'Noto Sans KR';
+// $sans-serif: 'Noto Sans KR';
+$sans-serif: 'Nanum Gothic';
+// $monospace: 'Nanum Gothic Coding';
+// $sans-serif: 'Dongle';
 $monospace: 'Ubuntu Mono';
 $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
 
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR|Ubuntu+Mono);
+@import url(https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@300&family=Nanum+Gothic+Coding&family=Noto+Sans+KR:wght@300&display=swap);
+// @import url(https://fonts.googleapis.com/css2?family=Dongle:wght@1000&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300&display=swap);
 
 // $base-font-family: "Roboto Slab", "Noto Serif SC", "Noto Serif TC" !default;
 // $reading-font-family:  Roboto, "Noto Sans SC", "Noto Sans TC" !default;
