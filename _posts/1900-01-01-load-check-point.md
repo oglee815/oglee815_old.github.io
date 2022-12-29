@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-12-29 14:08
-created_date: 2022-12-29 14:08
+date: 2022-12-29 00:00
+created_date: 2022-12-29 00:00
 title: "[Work] state_dict의 key 이름이 변경 됬을때 로드(Electra)"
 description:
 comments: true
