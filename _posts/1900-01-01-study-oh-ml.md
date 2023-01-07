@@ -6,7 +6,7 @@ title: "[Book] Machine Learning"
 author: 오일석
 description: Machine learning
 comments: true
-math: true
+mathjax: true
 category:
 - Study
 tags:
