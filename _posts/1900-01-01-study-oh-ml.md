@@ -32,7 +32,7 @@ Machine learning by 오일석
   - $$P(y|x) = \frac{P(x|y)P(y)}{P(x)} $$
 - 이때, P(y\|x)는 x라는 사건 이후에 발생했으므로 사후확률(posterior probability),
 - P(y)는 x와 상관 없이 알 수 있으므로 사전 확률(prior probability)라고 한다.
-- <span class="my_highlight">P(x\|y)는 우도(likelyhood)라고 한다.</span>
+- <span class="my_highlight">P(x\|y)는 우도(likelihood)라고 한다.</span>
 - 분모의 P(x)는 기계학습에서 무시된다. 정답중에서 상대적인 확률만 알면되기 때문.
 
 #### 베이즈 정리를 기계학습에 적용
@@ -50,12 +50,12 @@ Machine learning by 오일석
 
 - <span>$$\mathbb{X}=\{x_1, x_2, ..., x_n\}$$</span>
 - From [https://angeloyeo.github.io/2020/07/17/MLE.html](https://angeloyeo.github.io/2020/07/17/MLE.html)
-  - likelihood(분포Y\|데이터B) 는 얻은 데이터 B가 추정하고자 하는 분포 Y에서 나왔을 확률이다.
+  - likelihood(분포Y\|데이터B)는 얻은 데이터 B가 추정하고자 하는 분포 Y에서 나왔을 확률이다.
   - 아래와 같이 전체 표본집합의 결합확률밀도 함수를 likelihood function이라고 한다.
   - $$P(\mathbb{X}|\theta)=\prod_{k=1}^{n}P(x_{k}|\theta)$$
   - (각 샘플들이 IID 이기 때문에 곱해줌)
   - 보통 계산의 편의성 및 확률이라는 작은 값을 n번 곱하면 매우 작은 수가 되므로 log likelyhood function을 계산함
-    - $$L(\theta| \mathbb{X}) = \log P(\mathbb{X}|\theta) = \sum_{i=1}^{n}\log P(x_i | \theta)$$
+    - $$Liklihood(\theta| \mathbb{X}) = \log P(\mathbb{X}|\theta) = \sum_{i=1}^{n}\log P(x_i | \theta)$$
   - 결국 <span class="my_highlight">Maximum Likelihood Estimation은 Likelihood 함수의 최대값을 찾는 방법</span>이라 할 수 있다.
   - <span>$$\hat{\theta}=argmax_{\theta}\;log\;P(\mathbb{X}|\theta)$$</span>
   - log 함수는 단조증가 함수이기 때문에 likelihood function의 최대값을 찾으나 log-likelihood function의 최대값을 찾으나 두 경우 모두의 최대값을 갖게 해주는 정의역의 함수 입력값은 동일하다. 따라서 log를 취해도 solution은 같다.
