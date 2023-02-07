@@ -65,3 +65,5 @@ Constituional AI
     - More trustworthy (actually uses a moral framework)
     - ![image](https://user-images.githubusercontent.com/18374514/217290658-de97f841-41b3-48c0-bae3-aa6474be7ee3.png)
 - ![image](https://user-images.githubusercontent.com/18374514/217291094-43866578-85c3-4004-9b34-bb6975400741.png)
+- ![image](https://user-images.githubusercontent.com/18374514/217291235-21de846f-f103-4e74-86b7-4e5d2d69c375.png)
+- ![image](https://user-images.githubusercontent.com/18374514/217291903-65b2e771-ccb8-4a4e-bf57-9935edf4f507.png)
