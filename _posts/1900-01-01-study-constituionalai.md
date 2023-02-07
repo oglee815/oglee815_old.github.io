@@ -64,3 +64,4 @@ Constituional AI
     - Far better for humanity in the long run
     - More trustworthy (actually uses a moral framework)
     - ![image](https://user-images.githubusercontent.com/18374514/217290658-de97f841-41b3-48c0-bae3-aa6474be7ee3.png)
+- ![image](https://user-images.githubusercontent.com/18374514/217291094-43866578-85c3-4004-9b34-bb6975400741.png)
