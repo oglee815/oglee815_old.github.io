@@ -55,4 +55,12 @@ Constituional AI
     - Easy to implement
     - Gets good results up front
   - ![image](https://user-images.githubusercontent.com/18374514/217289910-74787c15-23b6-41d4-8612-79defbde7d14.png)
-- 
+- Pros & Cons of CAI(Learned Harmlessness)
+  - Cons
+    - Peak Harmlessness == do nothing
+    - Needs other goals to offset neutrailty(중립)/inertness(불활성)
+    - Less responsive to user desires
+  - Pros:
+    - Far better for humanity in the long run
+    - More trustworthy (actually uses a moral framework)
+    - ![image](https://user-images.githubusercontent.com/18374514/217290658-de97f841-41b3-48c0-bae3-aa6474be7ee3.png)
