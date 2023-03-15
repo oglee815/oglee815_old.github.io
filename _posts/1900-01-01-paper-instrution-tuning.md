@@ -75,4 +75,16 @@ k { background-color:pink }
   - 근데 데이터셋 이름을 평가때도 주면.. 이건 치팅인데?
 - <img src='https://user-images.githubusercontent.com/18374514/225252837-c70afb65-fe99-4e6c-ab5d-ccf503d5a77f.png' width=300>
 
-  
+## Instruction with few-shot examplars
+- Few-shot을 위한 몇개의 샘플(instruction포함) + 새로운 입력 with instruct 하면 성능이 훨씬 좋아짐
+- Few-shot을 위해 최대 16개 샘플을 넣었음.
+
+## Instruction tuinng facilitates prompt tuning
+- FLAN + Continuous Prompt Tuning.
+- <k>제일 신기한 부분.. FLAN하고 continuous prompt를 섞으면 성능이 10점 이상 좋아진다</k>
+- <k>SuperGLUE에 대해서, N-1개로 insturction tuning 한 다음, 나머지 1개에 대해서만 continous prompt 튜닝을 추가적으로 하고 그 해당 데이터셋에 대하여 평가한 것 같은? </k> 확실하진 않음.
+- 
+
+## Datasets per task cluster & templates per datset
+- <img src='https://user-images.githubusercontent.com/18374514/225262595-5e24496b-53bb-4ad3-95ca-2c9c4639aa1c.png' width=400>
+- 클러스터 별로 dataset 사이즈가 중요한듯. 오히려 템플릿은 크게 중요하지가 않네. 
