@@ -38,4 +38,5 @@ k { background-color:pink }
 - For each datasets, we manually compose <k>ten unique templates</k> that use natural language instructions.
 - To increase diversity, we also include up to three templates that <k>"turned the task around,"</k>, (e.g., for sentiment classification we include templates asking to generate a movie review).
 - <img src='https://user-images.githubusercontent.com/18374514/225227730-dd0cc691-7e0d-4f7b-aac7-15627972d74d.png' width=650>
-  - option을 꼭 주는게 맞을까?
+- `option을 꼭 주는게 맞을까?`
+- ㅇ
