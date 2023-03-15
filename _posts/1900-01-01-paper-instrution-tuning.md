@@ -35,4 +35,7 @@ k { background-color:pink }
 ## Templates
 - 62 text datasets into a single mixture, 12 task clusters
 - <img src='https://user-images.githubusercontent.com/18374514/225226122-71ff24d0-eaef-4984-9a93-8bd0e3804658.png' width=650>
-- 
+- For each datasets, we manually compose <k>ten unique templates</k> that use natural language instructions.
+- To increase diversity, we also include up to three templates that <k>"turned the task around,"</k>, (e.g., for sentiment classification we include templates asking to generate a movie review).
+- <img src='https://user-images.githubusercontent.com/18374514/225227730-dd0cc691-7e0d-4f7b-aac7-15627972d74d.png' width=650>
+  - option을 꼭 주는게 맞을까?
