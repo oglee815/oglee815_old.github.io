@@ -39,4 +39,15 @@ k { background-color:pink }
 - To increase diversity, we also include up to three templates that <k>"turned the task around,"</k>, (e.g., for sentiment classification we include templates asking to generate a movie review).
 - <img src='https://user-images.githubusercontent.com/18374514/225227730-dd0cc691-7e0d-4f7b-aac7-15627972d74d.png' width=650>
 - `option을 꼭 주는게 맞을까?`
-- ㅇ
+- Option을 주는게 당연히 성능 향상에는 도움이 되지만, 실제 사용 할 때 매번 option을 넣기엔 애바인데?
+
+## Model
+- <k>Lambda-PT</k>, a dense left-to-right, decoder-only transformer language model of 137B parameters
+- pretrained on a collection of <k>web</k> documents(including thoese with computer <k>code</k>), <k>dialog data and wikipedia</k>, tokenized into 2.49T BPE tokens with a 32k vocabulary using the sentencepiece.
+- <k>10% of data was non-english</k>.
+- PT가 붙은 이유는 dialog에 fine-tune 되지 않은 lambda이기 대문
+
+## Instruction tuning procedure
+- mix all datasets and randomly samples from each dataset.
+- To balance the different sizes of datasets, we limit the number of training examples per dataset to <k>30k</k> and follow the examples-proportional mixing scheme with a mixing rate maximum of <k>3k</k>
+- 
