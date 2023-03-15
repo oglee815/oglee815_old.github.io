@@ -1,9 +1,3 @@
-<style>
-r { color: Red }
-o { color: Orange }
-g { color: Green }
-</style>
-
 ---
 layout: post
 date: 2023-03-15 00:00
@@ -23,6 +17,11 @@ FLAN, T0 등등
 
 <!--more-->
 
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green }
+</style>
 
 
 # TODOs:
