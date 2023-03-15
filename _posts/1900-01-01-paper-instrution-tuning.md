@@ -21,10 +21,11 @@ FLAN, T0 등등
 r { color: Red }
 o { color: Orange }
 g { color: Green }
+k { background-color:pink }
 </style>
 
 # FLAN: Finetuned language models are zero-shot learners, Google
-- simple method for <o>improving the zero-shot learning abilities</o> of language model.
+- simple method for <k>improving the zero-shot learning abilities</k> of language model.
 - instruction tuning, finetuning language models on a collenction of datasets described via instructions, substantially improves zero-shot performance on unseen tasks
 - **137B parameter** pretrained language model and instruction tune it on over **60 NLP datasets verbalized via natural language instruction templates**
 - **surpasses zero-shot 175B GPT3 on 20 of 25 datasets**
