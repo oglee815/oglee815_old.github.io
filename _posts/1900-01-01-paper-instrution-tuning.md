@@ -79,7 +79,7 @@ k { background-color:pink }
 - Few-shot을 위한 몇개의 샘플(instruction포함) + 새로운 입력 with instruct 하면 성능이 훨씬 좋아짐
 - Few-shot을 위해 최대 16개 샘플을 넣었음.
 
-## Instruction tuinng facilitates prompt tuning
+## Instruction tuinng faciliates prompt tuning
 - FLAN + Continuous Prompt Tuning.
 - <k>제일 신기한 부분.. FLAN하고 continuous prompt를 섞으면 성능이 10점 이상 좋아진다</k>
 - <k>SuperGLUE에 대해서, N-1개로 insturction tuning 한 다음, 나머지 1개에 대해서만 continous prompt 튜닝을 추가적으로 하고 그 해당 데이터셋에 대하여 평가한 것 같은? </k> 확실하진 않음.
