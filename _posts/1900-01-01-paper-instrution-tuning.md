@@ -50,4 +50,29 @@ k { background-color:pink }
 ## Instruction tuning procedure
 - mix all datasets and randomly samples from each dataset.
 - To balance the different sizes of datasets, we limit the number of training examples per dataset to <k>30k</k> and follow the examples-proportional mixing scheme with a mixing rate maximum of <k>3k</k>
-- 
+- <k>30K</k> gradient steps with <k>8192 batch size</k> using <k>Adafactor Optimizer(3e-5)</k>
+- sequence length for input:1024 output:256 
+- `packing이 뭘까?`
+- 60 hours on a TPUv3 with 128 cores.
+
+## Results
+- best dev template?
+- NLI : GPT보다 훨씬 성능이 좋음. pretraining 단계에서 NLI 예시들이 거의 나타나지 않았기 때문.
+  - template : "does < premise > mean that < hypothesis >?"
+   
+## How performance is affected by the number of clusters and tasks used in instruction tuning?
+- sentiment analysis 빼고 task를 늘릴 수록 unseen task에서 성능이 늘어남.
+
+## Scaling laws
+- 422M, 2B, 8B, 68B, 137B
+- <k>8B 까지는 오히려 성능이 떨어짐</k>
+- One potential explanation for this result could be that for small-scale models, learning the ~40k tasks used during <k>instruction tuning fills the entire model capacity</k>, causing these models to perform worse on new tasks.
+
+## Role of Instruction
+- unseen task를 잘하는게 Multi task learning의 효과인지 보기 위해서, 
+  - 1) instruction 없이 그냥 학습, 평가 때는 instruction을 주긴 줌(왜냐면 이것도 안주면 아예 맞출 가능성이 없기 때문)
+  - 2) dataset 이름만 주기 ex) Translation:WMT'14 to French
+  - 근데 데이터셋 이름을 평가때도 주면.. 이건 치팅인데?
+- <img src='https://user-images.githubusercontent.com/18374514/225252837-c70afb65-fe99-4e6c-ab5d-ccf503d5a77f.png' width=500>
+
+  
