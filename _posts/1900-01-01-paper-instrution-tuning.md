@@ -73,6 +73,6 @@ k { background-color:pink }
   - 1) instruction 없이 그냥 학습, 평가 때는 instruction을 주긴 줌(왜냐면 이것도 안주면 아예 맞출 가능성이 없기 때문)
   - 2) dataset 이름만 주기 ex) Translation:WMT'14 to French
   - 근데 데이터셋 이름을 평가때도 주면.. 이건 치팅인데?
-- <img src='https://user-images.githubusercontent.com/18374514/225252837-c70afb65-fe99-4e6c-ab5d-ccf503d5a77f.png' width=500>
+- <img src='https://user-images.githubusercontent.com/18374514/225252837-c70afb65-fe99-4e6c-ab5d-ccf503d5a77f.png' width=300>
 
   
