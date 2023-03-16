@@ -96,6 +96,8 @@ k { background-color:pink }
 - <img src='https://user-images.githubusercontent.com/18374514/225526761-c913b519-e74a-435a-b528-a953f1964bf3.png' width=500>
 - <img src='https://user-images.githubusercontent.com/18374514/225526981-cc2f3898-9f78-4013-9d5f-977f2f952c7a.png' width=500>
 - 9개 데이터셋에 대하여 CoT를 <k>수작업</k>으로 만들었음
+- <img src='https://user-images.githubusercontent.com/18374514/225543110-bc1cae8a-c089-415f-a508-969512e8f5ae.png' width=500>
+- 위 기준에서는 무조건 task가 많으면 많을수록 좋다. 단 8B 이상에서..
 
 
 
