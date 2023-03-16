@@ -101,6 +101,7 @@ k { background-color:pink }
 - 282까지는 매우 많이 상승하고, 그 뒤는 조금씩...
 - 그 이유는 282 이후에는 diverse가 실제로 적은 task들. 새로 배우는게 없음.
 - Another explanation is that most of the gains from multi-task instruction finetuning come from the model learning to better express knowledge that it <k>already knows from pretraining, and more than 282 tasks does not help too much</k>. This second explanation could make sense since the pre-training data consists of 780B tokens, while instruction finetuning only uses 1.4B tokens
+- open-ended requests 에 대해 인간이 직접 평가 : creativity, reasoning over contexts, complex reasoning, planning, and explanation.
 
 # 2023 The Flan Collection: Designing Data and Methods for effective instruction tuning
 ## Intro
