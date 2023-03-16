@@ -88,3 +88,13 @@ k { background-color:pink }
 ## Datasets per task cluster & templates per datset
 - <img src='https://user-images.githubusercontent.com/18374514/225262595-5e24496b-53bb-4ad3-95ca-2c9c4639aa1c.png' width=400>
 - 클러스터 별로 dataset 사이즈가 중요한듯. 오히려 템플릿은 크게 중요하지가 않네. 
+
+# 2210 Scaling instruction-finetuned language models
+## Intro
+- 
+
+# 2023 The Flan Collection: Designing Data and Methods for effective instruction tuning
+## Intro
+- We find task <k>balancing and enrichment techniques</k> are overlooked but critical to effective instruction tuning, and in particular, training with <k>mixed prompt settings (zero-shot, few-shot, and chain-of-thought)</k> actually yields stronger (2%+) performance in all settings.
+- we show Flan-T5 requires <k>less finetuning to converge higher and faster than T5 on single downstream tasks</k>—motivating instruction-tuned models as more computationally efficient starting checkpoints for new tasks.
+- we evaluate the methods and results of open sourced instruction generalization efforts, comparing their finetuning techniques and methods.
