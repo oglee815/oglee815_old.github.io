@@ -91,7 +91,11 @@ k { background-color:pink }
 
 # 2210 Scaling instruction-finetuned language models
 ## Intro
-- 
+- In this paper we explore instruction finetuning with a particular focus on <k>(1) scaling the number of tasks, (2) scaling the model size, and (3) finetuning on chain-of-thought data.</k>
+- We find that instruction finetuning with the above aspects <k>dramatically improves performance</k> on a variety of model classes (PaLM, T5, U-PaLM), prompting setups (zero-shot, few-shot, CoT), and evaluation benchmarks (MMLU, BBH, TyDiQA, MGSM, open-ended generation, RealToxicityPrompts).
+- <img src='https://user-images.githubusercontent.com/18374514/225526761-c913b519-e74a-435a-b528-a953f1964bf3.png' width=500>
+
+
 
 # 2023 The Flan Collection: Designing Data and Methods for effective instruction tuning
 ## Intro
