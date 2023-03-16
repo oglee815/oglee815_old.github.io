@@ -98,8 +98,9 @@ k { background-color:pink }
 - 9개 데이터셋에 대하여 CoT를 <k>수작업</k>으로 만들었음
 - <img src='https://user-images.githubusercontent.com/18374514/225543110-bc1cae8a-c089-415f-a508-969512e8f5ae.png' width=500>
 - 위 기준에서는 무조건 task가 많으면 많을수록 좋다. 단 8B 이상에서..
-
-
+- 282까지는 매우 많이 상승하고, 그 뒤는 조금씩...
+- 그 이유는 282 이후에는 diverse가 실제로 적은 task들. 새로 배우는게 없음.
+- Another explanation is that most of the gains from multi-task instruction finetuning come from the model learning to better express knowledge that it <k>already knows from pretraining, and more than 282 tasks does not help too much</k>. This second explanation could make sense since the pre-training data consists of 780B tokens, while instruction finetuning only uses 1.4B tokens
 
 # 2023 The Flan Collection: Designing Data and Methods for effective instruction tuning
 ## Intro
