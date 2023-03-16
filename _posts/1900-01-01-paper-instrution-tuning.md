@@ -94,6 +94,8 @@ k { background-color:pink }
 - In this paper we explore instruction finetuning with a particular focus on <k>(1) scaling the number of tasks, (2) scaling the model size, and (3) finetuning on chain-of-thought data.</k>
 - We find that instruction finetuning with the above aspects <k>dramatically improves performance</k> on a variety of model classes (PaLM, T5, U-PaLM), prompting setups (zero-shot, few-shot, CoT), and evaluation benchmarks (MMLU, BBH, TyDiQA, MGSM, open-ended generation, RealToxicityPrompts).
 - <img src='https://user-images.githubusercontent.com/18374514/225526761-c913b519-e74a-435a-b528-a953f1964bf3.png' width=500>
+- <img src='https://user-images.githubusercontent.com/18374514/225526981-cc2f3898-9f78-4013-9d5f-977f2f952c7a.png' width=500>
+- 9개 데이터셋에 대하여 CoT를 <k>수작업</k>으로 만들었음
 
 
 
