@@ -103,8 +103,11 @@ k { background-color:pink }
 - Another explanation is that most of the gains from multi-task instruction finetuning come from the model learning to better express knowledge that it <k>already knows from pretraining, and more than 282 tasks does not help too much</k>. This second explanation could make sense since the pre-training data consists of 780B tokens, while instruction finetuning only uses 1.4B tokens
 - open-ended requests 에 대해 인간이 직접 평가 : creativity, reasoning over contexts, complex reasoning, planning, and explanation.
 
-# 2023 The Flan Collection: Designing Data and Methods for effective instruction tuning
+# 2302The Flan Collection: Designing Data and Methods for effective instruction tuning
 ## Intro
 - We find task <k>balancing and enrichment techniques</k> are overlooked but critical to effective instruction tuning, and in particular, training with <k>mixed prompt settings (zero-shot, few-shot, and chain-of-thought)</k> actually yields stronger (2%+) performance in all settings.
 - we show Flan-T5 requires <k>less finetuning to converge higher and faster than T5 on single downstream tasks</k>—motivating instruction-tuned models as more computationally efficient starting checkpoints for new tasks.
 - we evaluate the methods and results of open sourced instruction generalization efforts, comparing their finetuning techniques and methods.
+
+# 2212 Self-Instruct: Aligning Language Model with Self Generated Instructdions
+- 
