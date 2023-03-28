@@ -110,4 +110,8 @@ k { background-color:pink }
 - we evaluate the methods and results of open sourced instruction generalization efforts, comparing their finetuning techniques and methods.
 
 # 2212 Self-Instruct: Aligning Language Model with Self Generated Instructdions
+- We introduce <k>Self-instruct, a frawework for improving the instruction-following capabilities of pretrained language models by bootstraping off its own generation.</k>
+- Our pipeline generates instruction, input, and output samples from a language model, then <k>prunes</k> them before using them to finetune the original model.
+- 33\% absolute improvement over the original model(GPT3) on <k>Super-Natural-Instructions</k>, on par with the performance of InstructGPT
+- Self-instruct provides an <k>almost annotation-free method</k> for aligning pre-trained language models with instructions 
 - 
