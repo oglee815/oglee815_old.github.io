@@ -114,4 +114,11 @@ k { background-color:pink }
 - Our pipeline generates instruction, input, and output samples from a language model, then <k>prunes</k> them before using them to finetune the original model.
 - 33\% absolute improvement over the original model(GPT3) on <k>Super-Natural-Instructions</k>, on par with the performance of InstructGPT
 - Self-instruct provides an <k>almost annotation-free method</k> for aligning pre-trained language models with instructions 
-- 
+
+## Introduction
+- <k>PromptSource, SuperNaturalInstructions</k> are two notable recent datasets that use extensive mannual annotation for collecting instructions to construct T0 and Tk-Instruct.
+- However, this process is <k>costly and often suffers limited diversity</k> given that most human generations tend to be <k>popular NLP tasks</k> and different ways to describe them.
+  - 그럼 오히려, Popular NLP tasks에 대해서는 다른 연구 방식이 더 나을 수도 있다.
+- In this work, we introduce <k>SELF-instruct, a semi-automated process for instruction-tuning</k> a pretrained LM using instructional signals from the model itself.
+- The overall process is an iterative bootstrapping algorithm, <k>which starts off with a limited(175) seed set of manually-written instructions</k> that are used to guide the overall generation.
+- In the first phase, the model is prompted to generate instructions for new tasks.
