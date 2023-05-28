@@ -39,3 +39,9 @@ Taken together, these results strongly suggest that <r>almost all knowledge in l
 - We hypothesize that alignment can be a simple process where the model learns the style or format for interacting with users, to expose the knowledgeand capabilities that were already acquired during pretraining.
 - To test this hypothesis, we curate 1,000 examples that approximate <r>real user prompts and high-quality responses</r>. We select <r>750 top questions and answers from community forums</r>, such as Stack Exchange and wikiHow, sampling for quality and diversity.
 - In addition, <r>we manually write 250 examples of prompts and responses</r>, while optimizing for <r>task diversity and emphasizing a uniform response style in the spirit of an AI assistant.</r>
+- Finally, we train LIMA, a pretrained 65B-parameter LLaMa model [Touvron et al., 2023] fine-tuned on this set of 1,000 demonstrations.
+- 나머진 대충 성능 좋았다는 얘기
+
+# Alignment Data
+- 
+
