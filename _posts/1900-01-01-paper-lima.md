@@ -14,11 +14,12 @@ tags:
 ---
 
 1000여개의 샘플로도 Instruction tuning 가능
-< mark style='background-color:pink' >
-< style >
+<!--more-->
+<mark style='background-color:pink' >
+<style>
 r { color: Red }
 o { color: Orange }
 g { color: Green }
-< /style >
+</style>
 
 #
