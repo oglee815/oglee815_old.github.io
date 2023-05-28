@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-05-29 14:08
-created_date: 2023-05-29 14:08
+date: 2023-05-28 14:08
+created_date: 2023-05-28 14:08
 title: "[paper] Less is more(LIMA)"
 description: LIMA paper
 comments: true
