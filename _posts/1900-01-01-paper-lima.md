@@ -32,10 +32,10 @@ g{color:Green}
 - LIMA demonstrates remarkably strong performance, learning to follow specific response formats from only a handful of
 examples in the training data, <r>including complex queries that range from planning trip itineraries to speculating about alternate history.</r>
 - Moreover, the model tends to <r>generalize well to unseen tasks that did not appear in the training data.</r>
-- In a
-controlled human study, responses from LIMA are either equivalent or strictly
-preferred to GPT-4 in 43% of cases; this statistic is as high as 58% when compared
-to Bard and 65% versus DaVinci003, which was trained with human feedback.
-Taken together, these results strongly suggest that almost all knowledge in large
-language models is learned during pretraining, and only limited instruction tuning
-data is necessary to teach models to produce high quality output
+- In a controlled human study, responses from LIMA are either equivalent or strictly preferred to GPT-4 in 43% of cases; this statistic is as high as 58% when compared to Bard and 65% versus DaVinci003, which was trained with human feedback.
+Taken together, these results strongly suggest that <r>almost all knowledge in large language models is learned during pretraining</r>, and only <r>limited instruction tuning data is necessary to teach models to produce high quality output</r>
+
+# Introduction
+- We hypothesize that alignment can be a simple process where the model learns the style or format for interacting with users, to expose the knowledgeand capabilities that were already acquired during pretraining.
+- To test this hypothesis, we curate 1,000 examples that approximate <r>real user prompts and high-quality responses</r>. We select <r>750 top questions and answers from community forums</r>, such as Stack Exchange and wikiHow, sampling for quality and diversity.
+- In addition, <r>we manually write 250 examples of prompts and responses</r>, while optimizing for <r>task diversity and emphasizing a uniform response style in the spirit of an AI assistant.</r>
