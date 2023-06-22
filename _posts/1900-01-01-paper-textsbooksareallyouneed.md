@@ -17,7 +17,7 @@ We introduce phi-1, a new large language model for code, with significantly smal
 <!--more-->
 
 <mark style='background-color:pink'>
-< style >
+<style>
 r { color: Red }
 o { color: Orange }
 g { color: Green }
