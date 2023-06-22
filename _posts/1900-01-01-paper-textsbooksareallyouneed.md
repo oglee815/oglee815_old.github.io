@@ -16,11 +16,10 @@ tags:
 We introduce phi-1, a new large language model for code, with significantly smaller size than competing models
 <!--more-->
 
-<mark style='background-color:pink'>
 <style>
-r { color: Red }
-o { color: Orange }
-g { color: Green }
+r{color:Red}
+o{color:Orange}
+g{color:Green}
 </style>
 
 # Abstract
