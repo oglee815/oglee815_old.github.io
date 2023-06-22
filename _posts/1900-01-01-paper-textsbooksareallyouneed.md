@@ -14,7 +14,7 @@ tags:
 ---
 
 We introduce phi-1, a new large language model for code, with significantly smaller size than competing models
-<!-- More -->
+<!--more-->
 
 <mark style='background-color:pink'>
 < style >
