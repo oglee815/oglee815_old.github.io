@@ -3,6 +3,7 @@ layout: post
 date: 2023-06-29 14:08
 created_date: 2023-06-29 14:08
 title: "[book]인공지능의 편향과 챗봇의 일탈"
+author: 정원섭
 description:
 comments: true
 mathjax: true
