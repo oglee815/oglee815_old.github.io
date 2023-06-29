@@ -14,14 +14,15 @@ tags:
 - 편향성
 ---
 
-< mark style='background-color:pink' >
-< style >
+인공지능의 편향성에 관한 책
+<!--more-->
+<mark style='background-color:pink'>
+<style>
 r { color: Red }
 o { color: Orange }
 g { color: Green }
-< /style >
+</style>
 
-<!--more-->
 
 # 인공지능의 편향과 챗봇의 일탈
 - 2016년 3월에 발표된 MS의 Tay 사태 -> 알파고 이후에 일어난 일이므로 사람들에게 큰 영향을 끼침.
