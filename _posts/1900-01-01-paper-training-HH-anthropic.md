@@ -34,4 +34,5 @@ g{color:Green}
 # Introduction
 - In this paper we show that we can train a relatively helpful and harmless (HH) natural language assistant by collecting human preference data and applying the techniques of <r>preference modeling (PMing) and reinforcement learning from human feedback (RLHF)</r>
 - ![image](https://github.com/oglee815/oglee815.github.io/assets/18374514/b22e6aca-69f4-4b18-89f8-41fb0b9574d0)
+- For harmlessness, we invite crowdworkers to adversarially probe or <r>‘red-team’ our language models in order to provoke harmful responses</r>
 - 
