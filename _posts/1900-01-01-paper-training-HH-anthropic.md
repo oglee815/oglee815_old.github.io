@@ -43,4 +43,7 @@ g{color:Green}
   - Smaller models experience severe 'alignment taxes'(13B, 52B에서는 오히려 NLP task도 잘함)
   - 요약 테스크와 관련한 specialized skill을 HH 데이터와 함께 학습하니, 둘다 잘하더라
   - There is a tension between helpfulness and harmlessness
-  - OOD(out-of-distribution) Detection techniques to reject most strange and harmful request
+  - one can use OOD(out-of-distribution) Detection techniques to reject most strange and harmful request
+- Scaling, RLHF Robustness, and Iterated 'Online' Training
+  - We study scaling relations for PM accuracy as a funtion of model and dataset size, and find rougle log-linear trends
+  - robustness RLHF, <r>larger PMs are more robust than smaller PMs</r> 
