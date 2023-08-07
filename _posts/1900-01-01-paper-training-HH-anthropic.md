@@ -17,7 +17,6 @@ tags:
 Anthropic's RLHF
 <!--more-->
 
-<!-- <mark style='background-color:pink'> -->
 <style>
 r{color:Red}
 o{color:Orange}
