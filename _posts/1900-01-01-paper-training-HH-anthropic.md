@@ -81,3 +81,58 @@ g{color:Green}
   - <r>RS</r> datasets consisting of 52k helpfulness comparisons and 2k red-teaming comparions using rejection sampling models, where rejection sampling  used a preference model trained on the base dataset.
   - <r>online</r> datasets including data from RLHF models, which were updated on a rougly weekly cadecnce over the course of about five weeks. This dataset contains <r>22k helfulness comparions and no red-teaming data.</r>
 
+## Comparing Models with Elo Scores
+- ![image](https://github.com/oglee815/oglee815.github.io/assets/18374514/cf5a5501-3c2c-44ff-8f4b-60ae97e26baf)
+
+# Preference Modeling for Helpfulness and Harmlessness
+- 13M ~ 52B 까지 4배씩 증가시키며 테스트
+- Preference model pretraining(PMP) : LM Pretraining LR * 01, train on a mixture of comparison data made from StackExchange, Reddit, and Wikipedia.
+- We typically only train PMs for <r>a single epoch</r>(fixed learning rate)
+- log-linear trends in both dataset and model size
+- <r>Preference model scores should predict the probability</r> that humans will prefer one or another model-generated response.
+- We observe that PMs trained <r>only on helpfulness data are very well calibrated</r>, but PMs trained on <r>a mixture of helpful and harmless data are slightly under-confident</r>.
+- ![image](https://github.com/oglee815/oglee815.github.io/assets/18374514/c71be2e6-efe3-43d2-858c-e7d13577aa50)
+- We use <r>PM scores as the reward signal for RL</r>
+- 모델들이 High PM score를 받기 시작할 때, return 이 적어질 수 있으므로 online training 이 중요
+
+# Reinforcement Learning from Human Feedback
+- 1) Prepare a dataset of comparisons, and <r>train a PM to assign a higher score to the ‘better’ item in
+each comparison.</r> In the context of our human feedback experiments, each comparison consists of
+a prompt followed by a pair of model-generated responses, with a PM score evaluated at the end of
+each response.
+- 2). <r>Extract all the prompts from the preceding dataset, and train an RL policy to generate a response
+to each prompt autoregressively</r>, with a reward signal provided by the PM score at the end of the
+response.
+> 그럼 1에서 쓴 데이터를 2에서도 쓴다는 의미?
+- 하나의 발화가 timestep, 대화 자체가 trajectory, PM score는 끝에서 주어짐
+> 그럼 멀티턴으로 대화하고, 멀티턴에 대해서 하나의 PM Score가 주어진다는 거네? --> 어펜딕스 보니까 아닌듯, 매 발화마다 PM score가 있긴 있는듯
+- <r>PMs also become less calibrated at higher scores, so higher rewards do not necessarily imply better performance.</r>
+- <r>To stabilize RL training, we use PPO</r>
+- ![image](https://github.com/oglee815/oglee815.github.io/assets/18374514/05d5da6a-ee35-4023-b577-2a6d3b3744a6)
+- RLHF를 위해서 고픔질의 질문 10개를 Few-shot으로 활용, 추가 질문을 모집. 이때 Large LM을 활용
+- 모델이 생성한 질문이나 크라우드 워커가 만든거나 효율이 비슷해서 이 둘을 합침, 137K(사람), 369K 모델 생성
+
+## Robustness Experiments
+- PM이 학습 분포와 다른 대화에서는 잘 동작하지 않을 수 있음.
+- 이러한 경우, PPO가 잘 말을 해도 PM이 점수를 낮게 줄 수도 있다. 
+- 그래서 중간중간 모델의 snapshot을 활용해서 사람들에게 평가하도록 하고 PM score와 비교(true ELO)
+- 그러나 위의 방식은 너무 비싸기 때문에, test 용 PM을 따로 만들어서 평가함
+- 결국 robustness는 모델이 클수록 좋고 PM score에 높게 도달할 수록 robust하지 않게 됨
+
+## An approximately Linear Replation Between root(D_KL) and Reward
+
+## Tension Between Helpfulness and Harmlessness in RLHF
+
+## Iterated Online RLHF
+- We simply train the best RLHF policy we can, and use that to collect comparison data from crowdworkers. Since the policy was trained to optimize for PM score, it should produce responses that are on the upper end of the score distribution.
+- We mix the new comparison data with our existing data, and train a new scan of PMs, which we then use to train a new scan of RLHF policies. Then reiterate this process indefinitely.
+- 
+
+# Appendix : Preference Modeling
+- All PMs go through 3 phase:
+  - language model Pretraining
+  - Preference model Pretraining: LR은 0.1배 to LM pretraining
+  - Human Feedback finetuning : LR 0.01배 to LM pretraining
+- <r>마지막에 end-of-context token 붙잉고, 이 토큰으로 PM Score 예측</r>
+- lr scheduling이나 warmup 도 중요한듯
+
