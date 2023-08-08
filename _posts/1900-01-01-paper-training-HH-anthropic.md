@@ -46,4 +46,38 @@ g{color:Green}
   - one can use OOD(out-of-distribution) Detection techniques to reject most strange and harmful request
 - Scaling, RLHF Robustness, and Iterated 'Online' Training
   - We study scaling relations for PM accuracy as a funtion of model and dataset size, and find rougle log-linear trends
-  - robustness RLHF, <r>larger PMs are more robust than smaller PMs</r> 
+  - robustness RLHF, <r>larger PMs are more robust than smaller PMs</r>
+  - We find that <r>root(D_KL(Pi||Pi_0)) and reward are approximately linearly related</r> for much of RLHF training.
+  - 주마다 새로운 모델을 만들어서 crowdworker와 작업
+- Summary of Evaluations
+  - NLP and Code Evaluations, Static Alignment Evaluations(HHH Evaluations from BIG-Bench),Bot Adversarial Dialogues and for gender bias, TruthfulQA, BBQ-Lite
+  - <r>RLHF improves sentiment towards all groups, but does not remove bias</r>.
+  - Human Evluations: Elo scores comparing context-distilled models, base RLHF trained models, final online RLHF models
+
+# Related work
+- 우리가 instructGPT와 다른 점은 online learning이다.
+  - where we update the models interacting with crowdworkers in order to obtain <r>progressively higher-quality data and fill out the tails of our data distribution</r>
+  - specialized skill(coding, summarization
+
+# Data Collection
+- User see two possible model responses, and choose one with which to proceed. These two responses may come from the <r>same model, or two different models</r>.
+- Croudworker의 2가지 역할
+  - 1) 모델에게 질문하기
+  - 2) 2개의 답변 중 어느것이 더 helful and honest response 인지 선택(red-teaming은 harmful response 선택)
+- Master-qualified US-based MTurk workers
+
+## Helfulness and Harmlessness (Red Teaming) Datasets
+- For the <stong>helpfulness</strong> datasets, we asked crowdworkes to have <r>open-ended conversations</r> with our models, asking for help, advice, or for the model to accomplish a task, and <r>to choose the model response that was more helpful.</r>
+- For <strong>harmlessness</strong>, we asked crowdworkers to attempt to elicit harmful responses from our models, and to choose the more harmful response offered by the models.
+- Note that this means our helpfulness dataset tends to move conversations in a more <r>beneficial direction</r>, while in our red-teaming dataset user responses move conversations in a more <r>harmful direction</r>
+
+## Models deployed to the feedback interface and associated data distribution
+- we used 52B LLM with the broad specifications
+  - <r>HHH context-distilled 52B Language model</r>: It performs similarly to a plain 52B language model prompted with HHH dialogues
+  - <r>Rejection Sampling with a 52B preference model</r>, where samples were generated from a 52B context-distilled LM. In this case the number k of samples was a parameter, but most often we used <r>k=16</r>
+  - RLHF Finetuned Models: We used a succession of these models in our interface. We also deployed models trained on different mixtures of helpfulness and harmlessness data.
+- Three data distribution
+  - A <r>core base dataset</r> collected using only the context-distilled LM. This datset includes <r>44k helpfulness</r> comaprisons and <r>42k red-teaming comparions.</r>
+  - <r>RS</r> datasets consisting of 52k helpfulness comparisons and 2k red-teaming comparions using rejection sampling models, where rejection sampling  used a preference model trained on the base dataset.
+  - <r>online</r> datasets including data from RLHF models, which were updated on a rougly weekly cadecnce over the course of about five weeks. This dataset contains <r>22k helfulness comparions and no red-teaming data.</r>
+
