@@ -31,4 +31,7 @@ g{color:Green}
 - InstructGPT shows <r>small improvements in toxicity</r> over GPT-3, but not bias. : RealToxicityPrompts 사용. 25% fewer toxic output
 - <r>Alignment tax</r>, We can <r>minimize performance regressions on public NLP datasets</r> by modifying our RLHF fine-tuning procedure: NLP task에 성능이 떨어지는게 맞긴 맞는듯? anthropic은 근데 그렇지 않다고 했음. 무슨 차이일까? 그리고 이를 줄이기 위해 Pretraining도 함께 진행함(PPO-ptx)
 - Our models generalize to the preferences of “held-out” labelers that did not produce any training data: 학습에 동원되지 않은 사람들도 이 모델이 더 다고 평가.
-- Public NLP datasets are not reflective of how our language models are used: 사람이 만든 데이터하고, T0, Flan 같은 데이터로 학습한 모델하고 비교하면 후자가 살짝 후짐(1단계 SFT대비). 3단계까지하면 훨씬 InstructGPT가 좋음
+- Public NLP datasets are not reflective of how our language models are used: 사람이 만든 데이터하고, T0, Flan 같은 데이터로 학습한 모델하고 비교하면 후자가 살짝 후짐(1단계 SFT대비). 3단계까지하면 훨씬 InstructGPT가 좋음. <r>근데 과연 NLP Task에서는 InstructGPT가 더 좋을까?</r>
+- InstructGPT models show promising generalization to instructions <r>outside of the RLHF finetuning distribution</r>: 배우지 않은 테스크도 어느정도 하고, 다른 랭귀지에서도 작동함.
+- Stage2, 3는 Iterative 하게 하 수 있음. 이건 Anthropic 하고 똑같음.
+- ee
