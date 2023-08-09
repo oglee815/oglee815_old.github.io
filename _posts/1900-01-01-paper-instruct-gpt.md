@@ -77,5 +77,11 @@ g{color:Green}
 
 # Appendix
 - 하나의 prompt 당 K output을 뽑았기 때문에, 실제로는 prompt 보다 몇배 이상 학습을 시킨거임
-- 미친 175B는 배치가 8이네?
+- 미친 175B는 SFT PPO에서 배치가 8이네?
+> . The batch size for each iteration is 512, with a minibatch size of 64. In other words, each
+batch is randomly split into 8 minibatches and is trained on for only a single inner epoch. 이건 또 무슨말? PPO의 iteration 말하는건가?
 - RM 모델 조차 6B GPT-3를 다양한 NLP task에 finetuning 시킨 모델임
+- RM은 심지어 single epoch 학습이네;;
+- RM의 Batch는 64 * kC2 임
+- PPO는 SFT를 2 에폭 학습시킨 모델로 초기화
+- RL은 256 episodes. 31K unique prompts.
