@@ -63,3 +63,5 @@ g{color:Green}
 # Iterative Fine-tuning
 - PPO: standard RLHF
 - Rejection sampling fine-tuining: K outputs from the model, select the best output for gradient udate. 그니까 제일 좋은 정답들 모아서 다시 파인튜닝
+- *Rejection Sampling*: 70B LLAMA2-chat 사용(작은 모델들도 이친구로 만든 데이터 사용). RLHF V3가 만약 v2가 만든 데이터만 사용하면 regression in some capabilities(시쓰기 등에서). 따라서 V1, V2가 만든 데이터도 함께 사용.
+- 
